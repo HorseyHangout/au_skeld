@@ -1,0 +1,9 @@
+*.bsp
+*.lin
+*.log
+*.prt
+*.vmx
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini

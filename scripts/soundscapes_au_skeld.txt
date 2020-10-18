@@ -1,0 +1,157 @@
+"AUSkeld.Main"
+{
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/global.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Electrical"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/electrical.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Engines"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/engines/main.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.EngineRoom"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Engines"
+	}
+
+	// better handled by ambient_generic due to random timing
+	// "playlooping"
+	// {
+	// 	"wave"	"au_skeld/ambient/engines/enginesteam.wav"
+	// 	"volume"	"0.5"
+	// 	"position"	"0"
+	// }
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/engines/engineshock.wav"
+		"volume"	"0.5"
+		"position"	"0"
+	}
+}
+
+"AUSkeld.Communications"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/communications.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Medbay"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/medbay.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.O2"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/o2.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Reactor"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/reactor.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Security"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/security.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Shields"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/shields.wav"
+		"volume"	"0.5"
+	}
+}
+
+"AUSkeld.Weapons"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/weapons.wav"
+		"volume"	"0.5"
+	}
+}
