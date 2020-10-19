@@ -1,6 +1,6 @@
 # au_skeld
 
-The Skeld map for [NotMyWing]'s [Among Us Garry's Mod gamemode](https://github.com/NotMyWing/GarrysModAmongUs).
+The Skeld map for [NotMyWing](https://github.com/NotMyWing)'s [Among Us Garry's Mod gamemode](https://github.com/NotMyWing/GarrysModAmongUs).
 
 ## Contributors
 
