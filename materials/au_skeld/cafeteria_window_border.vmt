@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/cafeteria_window_border"
+	"$surfaceprop" "metalpanel"
+}

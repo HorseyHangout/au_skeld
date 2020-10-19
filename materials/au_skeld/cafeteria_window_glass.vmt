@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/cafeteria_window_glass"
+	"$surfaceprop" "glass"
+	"$translucent" "1"
+}

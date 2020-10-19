@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/hallway_floor_border"
+	"$surfaceprop" "metalpanel"
+}

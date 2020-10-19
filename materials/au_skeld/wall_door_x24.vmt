@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/wall_door_x24"
+	"$surfaceprop" "metalpanel"
+}

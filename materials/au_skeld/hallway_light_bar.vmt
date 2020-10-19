@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/hallway_light_bar"
+	"$surfaceprop" "glass"
+}
