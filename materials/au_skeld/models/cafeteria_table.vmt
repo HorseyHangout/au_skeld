@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/cafeteria_table"
+	"$surfaceprop" "metalpanel"
+}
