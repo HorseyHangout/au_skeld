@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/cafeteria_wire_panel"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "1"
+}
