@@ -10,3 +10,5 @@ The Skeld map for [NotMyWing](https://github.com/NotMyWing)'s [Among Us Garry's 
 ## License
 
 Copyright (c) HorseyHangout, 2020. Licensed under [Creative Commons BY-NC-SA 4.0](/LICENSE).
+
+Among Us texture and sound assets by InnerSloth.
