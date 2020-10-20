@@ -155,3 +155,25 @@
 		"volume"	"0.5"
 	}
 }
+
+// Special soundscape for the hallway junction between reactor
+// and security
+"AUSkeld.SecurityReactorEngine"
+{
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Engines"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Security"
+		"volume"	"0.75"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"AUSkeld.Reactor"
+		"volume"	"0.75"
+	}
+}
