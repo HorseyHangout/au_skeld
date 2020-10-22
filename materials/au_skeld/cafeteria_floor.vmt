@@ -2,4 +2,6 @@
 {
 	"$basetexture" "au_skeld/cafeteria_floor"
 	"$surfaceprop" "tile"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "au_skeld/cafeteria_floor_spec"
 }

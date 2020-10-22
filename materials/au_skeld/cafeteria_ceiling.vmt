@@ -1,4 +1,5 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/cafeteria_ceiling"
+	"$bumpmap" "au_skeld/cafeteria_ceiling_normal"
 }

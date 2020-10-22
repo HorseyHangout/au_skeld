@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\Adam\Documents\Projects\HH Projects\au_skeld\src\materials\cafeteria_wall.png"
+   sodipodi:docname="cafeteria_wall.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg1144"
+   version="1.1"
+   viewBox="0 0 512 512"
+   height="512"
+   width="512">
+  <defs
+     id="defs1138" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pagecheckerboard="true"
+     scale-x="1"
+     width="512px"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="364.02245"
+     inkscape:cx="492.9998"
+     inkscape:zoom="0.70710678"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata1141">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       y="0"
+       x="0"
+       height="512"
+       width="512"
+       id="rect1707"
+       style="fill:#548491;stroke:none;stroke-width:8;fill-opacity:1" />
+    <rect
+       style="fill:#89445a;fill-opacity:1;stroke:none;stroke-width:4.89898"
+       id="rect1707-5"
+       width="512"
+       height="192"
+       x="0"
+       y="320" />
+    <rect
+       y="496"
+       x="0"
+       height="16"
+       width="512"
+       id="rect1724"
+       style="fill:#141414;fill-opacity:1;stroke:none;stroke-width:17.9387;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>
