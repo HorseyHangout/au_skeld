@@ -1,6 +1,6 @@
 $modelname "au_skeld/emergency_button.mdl"
 $body emergency_button "emergency_button.smd"
-$surfaceprop metal
+$surfaceprop glass
 $cdmaterials "au_skeld/models"
 $staticprop
 $scale 1

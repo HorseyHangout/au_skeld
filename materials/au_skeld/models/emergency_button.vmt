@@ -1,6 +1,5 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "au_skeld/models/emergency_button"
-	"$surfaceprop" "glass"
-	"$alphatest" "1"
+	"$surfaceprop" "metal"
 }

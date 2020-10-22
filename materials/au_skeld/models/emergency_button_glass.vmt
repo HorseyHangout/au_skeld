@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/emergency_button_glass"
+	"$surfaceprop" "glass"
+	"$translucent" "1"
+}
