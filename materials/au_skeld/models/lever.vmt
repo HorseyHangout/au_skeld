@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/lever"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "au_skeld/models/lever_spec"
+}

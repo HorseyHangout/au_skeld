@@ -2,4 +2,6 @@
 {
 	"$basetexture" "au_skeld/models/cafeteria_table_emergency"
 	"$surfaceprop" "metalpanel"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "au_skeld/models/cafeteria_table_spec"
 }

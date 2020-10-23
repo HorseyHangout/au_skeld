@@ -1,6 +1,10 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/cafeteria_window_glass"
+	"$envmap" "env_cubemap"
 	"$surfaceprop" "glass"
 	"$translucent" "1"
+	"$envmapcontrast" "1"
+	"$envmapsaturation" "1"
+	"$envmaptint" "[ .3 .3 .3]"
 }
