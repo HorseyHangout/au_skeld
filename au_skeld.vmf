@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "825"
+	"mapversion" "827"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "825"
+	"mapversion" "827"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -37266,7 +37266,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37343,7 +37343,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37420,7 +37420,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37497,7 +37497,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37574,7 +37574,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37651,7 +37651,7 @@ world
 		}
 		editor
 		{
-			"color" "0 244 197"
+			"color" "0 104 125"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
