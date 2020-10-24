@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/data_pad"
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "au_skeld/models/data_pad_spec"
+}

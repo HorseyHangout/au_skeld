@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "828"
+	"mapversion" "884"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "828"
+	"mapversion" "884"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -359,7 +359,7 @@ world
 		{
 			"id" "1057"
 			"plane" "(-1448 1868 -96) (-1648 1868 -96) (-1648 1868 96)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "DEV/DEV_MEASUREGENERIC01B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -31366,8 +31366,8 @@ world
 			"id" "22069"
 			"plane" "(-2517 1785 144) (-2455 1785 144) (-2455 1847 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31442,8 +31442,8 @@ world
 			"id" "22075"
 			"plane" "(-2325 1785 144) (-2263 1785 144) (-2263 1847 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31518,8 +31518,8 @@ world
 			"id" "22081"
 			"plane" "(-2133 1785 144) (-2071 1785 144) (-2071 1847 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31594,8 +31594,8 @@ world
 			"id" "22033"
 			"plane" "(-2133 1593 144) (-2071 1593 144) (-2071 1655 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31670,8 +31670,8 @@ world
 			"id" "22021"
 			"plane" "(-2325 1593 144) (-2263 1593 144) (-2263 1655 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31746,8 +31746,8 @@ world
 			"id" "22045"
 			"plane" "(-2517 1593 144) (-2455 1593 144) (-2455 1655 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31822,8 +31822,8 @@ world
 			"id" "22117"
 			"plane" "(-2517 1401 144) (-2455 1401 144) (-2455 1463 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31898,8 +31898,8 @@ world
 			"id" "22111"
 			"plane" "(-2325 1401 144) (-2263 1401 144) (-2263 1463 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -31974,8 +31974,8 @@ world
 			"id" "22105"
 			"plane" "(-2133 1401 144) (-2071 1401 144) (-2071 1463 144)"
 			"material" "AU_SKELD/CAFETERIA_CEILING_LIGHT"
-			"uaxis" "[1 0 0 22] 1"
-			"vaxis" "[0 -1 0 -8] 1"
+			"uaxis" "[1 0 0 176] 0.125"
+			"vaxis" "[0 -1 0 -64] 0.125"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -37197,10 +37197,10 @@ world
 	}
 	solid
 	{
-		"id" "51923"
+		"id" "52919"
 		side
 		{
-			"id" "28944"
+			"id" "28980"
 			"plane" "(-16376 16376 16376) (16376 16376 16376) (16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37211,7 +37211,7 @@ world
 		}
 		side
 		{
-			"id" "28943"
+			"id" "28979"
 			"plane" "(-16376 16376 16376) (-16376 -16376 16376) (-16376 -16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37222,7 +37222,7 @@ world
 		}
 		side
 		{
-			"id" "28942"
+			"id" "28978"
 			"plane" "(16376 16376 -16376) (16376 -16376 -16376) (16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37233,7 +37233,7 @@ world
 		}
 		side
 		{
-			"id" "28941"
+			"id" "28977"
 			"plane" "(16376 16376 16376) (-16376 16376 16376) (-16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37244,7 +37244,7 @@ world
 		}
 		side
 		{
-			"id" "28940"
+			"id" "28976"
 			"plane" "(16376 -16376 -16376) (-16376 -16376 -16376) (-16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37255,7 +37255,7 @@ world
 		}
 		side
 		{
-			"id" "28939"
+			"id" "28975"
 			"plane" "(-414 -94 456) (-414 2292 456) (-4414 2292 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37266,7 +37266,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37274,10 +37274,10 @@ world
 	}
 	solid
 	{
-		"id" "51925"
+		"id" "52921"
 		side
 		{
-			"id" "28950"
+			"id" "28986"
 			"plane" "(-16376 -16376 -16376) (16376 -16376 -16376) (16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37288,7 +37288,7 @@ world
 		}
 		side
 		{
-			"id" "28949"
+			"id" "28985"
 			"plane" "(-16376 16376 16376) (-16376 -16376 16376) (-16376 -16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37299,7 +37299,7 @@ world
 		}
 		side
 		{
-			"id" "28948"
+			"id" "28984"
 			"plane" "(16376 16376 -16376) (16376 -16376 -16376) (16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37310,7 +37310,7 @@ world
 		}
 		side
 		{
-			"id" "28947"
+			"id" "28983"
 			"plane" "(16376 16376 16376) (-16376 16376 16376) (-16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37321,7 +37321,7 @@ world
 		}
 		side
 		{
-			"id" "28946"
+			"id" "28982"
 			"plane" "(16376 -16376 -16376) (-16376 -16376 -16376) (-16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37332,7 +37332,7 @@ world
 		}
 		side
 		{
-			"id" "28945"
+			"id" "28981"
 			"plane" "(-414 2292 -138) (-414 -94 -138) (-4414 -94 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37343,7 +37343,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37351,10 +37351,10 @@ world
 	}
 	solid
 	{
-		"id" "51927"
+		"id" "52923"
 		side
 		{
-			"id" "28956"
+			"id" "28992"
 			"plane" "(-16376 16376 16376) (-16376 -16376 16376) (-16376 -16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37365,7 +37365,7 @@ world
 		}
 		side
 		{
-			"id" "28955"
+			"id" "28991"
 			"plane" "(16376 16376 16376) (-16376 16376 16376) (-16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37376,7 +37376,7 @@ world
 		}
 		side
 		{
-			"id" "28954"
+			"id" "28990"
 			"plane" "(16376 -16376 -16376) (-16376 -16376 -16376) (-16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37387,7 +37387,7 @@ world
 		}
 		side
 		{
-			"id" "28953"
+			"id" "28989"
 			"plane" "(-4414 2292 456) (-414 2292 456) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37398,7 +37398,7 @@ world
 		}
 		side
 		{
-			"id" "28952"
+			"id" "28988"
 			"plane" "(-4414 -94 -138) (-414 -94 -138) (-414 2292 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37409,7 +37409,7 @@ world
 		}
 		side
 		{
-			"id" "28951"
+			"id" "28987"
 			"plane" "(-4414 -94 -138) (-4414 -94 456) (-4414 2292 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37420,7 +37420,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37428,10 +37428,10 @@ world
 	}
 	solid
 	{
-		"id" "51929"
+		"id" "52925"
 		side
 		{
-			"id" "28962"
+			"id" "28998"
 			"plane" "(16376 16376 -16376) (16376 -16376 -16376) (16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37442,7 +37442,7 @@ world
 		}
 		side
 		{
-			"id" "28961"
+			"id" "28997"
 			"plane" "(16376 16376 16376) (-16376 16376 16376) (-16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37453,7 +37453,7 @@ world
 		}
 		side
 		{
-			"id" "28960"
+			"id" "28996"
 			"plane" "(16376 -16376 -16376) (-16376 -16376 -16376) (-16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37464,7 +37464,7 @@ world
 		}
 		side
 		{
-			"id" "28959"
+			"id" "28995"
 			"plane" "(-4414 2292 456) (-414 2292 456) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37475,7 +37475,7 @@ world
 		}
 		side
 		{
-			"id" "28958"
+			"id" "28994"
 			"plane" "(-4414 -94 -138) (-414 -94 -138) (-414 2292 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37486,7 +37486,7 @@ world
 		}
 		side
 		{
-			"id" "28957"
+			"id" "28993"
 			"plane" "(-414 -94 456) (-414 -94 -138) (-414 2292 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37497,7 +37497,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37505,10 +37505,10 @@ world
 	}
 	solid
 	{
-		"id" "51931"
+		"id" "52927"
 		side
 		{
-			"id" "28968"
+			"id" "29004"
 			"plane" "(16376 16376 16376) (-16376 16376 16376) (-16376 16376 -16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37519,7 +37519,7 @@ world
 		}
 		side
 		{
-			"id" "28967"
+			"id" "29003"
 			"plane" "(-4414 2292 456) (-414 2292 456) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37530,7 +37530,7 @@ world
 		}
 		side
 		{
-			"id" "28966"
+			"id" "29002"
 			"plane" "(-4414 -94 -138) (-414 -94 -138) (-414 2292 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37541,7 +37541,7 @@ world
 		}
 		side
 		{
-			"id" "28965"
+			"id" "29001"
 			"plane" "(-4414 2292 456) (-4414 -94 456) (-4414 -94 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37552,7 +37552,7 @@ world
 		}
 		side
 		{
-			"id" "28964"
+			"id" "29000"
 			"plane" "(-414 2292 -138) (-414 -94 -138) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37563,7 +37563,7 @@ world
 		}
 		side
 		{
-			"id" "28963"
+			"id" "28999"
 			"plane" "(-4414 2292 -138) (-4414 2292 456) (-414 2292 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37574,7 +37574,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -37582,10 +37582,10 @@ world
 	}
 	solid
 	{
-		"id" "51933"
+		"id" "52929"
 		side
 		{
-			"id" "28974"
+			"id" "29010"
 			"plane" "(16376 -16376 -16376) (-16376 -16376 -16376) (-16376 -16376 16376)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37596,7 +37596,7 @@ world
 		}
 		side
 		{
-			"id" "28973"
+			"id" "29009"
 			"plane" "(-4414 2292 456) (-414 2292 456) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37607,7 +37607,7 @@ world
 		}
 		side
 		{
-			"id" "28972"
+			"id" "29008"
 			"plane" "(-4414 -94 -138) (-414 -94 -138) (-414 2292 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37618,7 +37618,7 @@ world
 		}
 		side
 		{
-			"id" "28971"
+			"id" "29007"
 			"plane" "(-4414 2292 456) (-4414 -94 456) (-4414 -94 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37629,7 +37629,7 @@ world
 		}
 		side
 		{
-			"id" "28970"
+			"id" "29006"
 			"plane" "(-414 2292 -138) (-414 -94 -138) (-414 -94 456)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 0] 0.25"
@@ -37640,7 +37640,7 @@ world
 		}
 		side
 		{
-			"id" "28969"
+			"id" "29005"
 			"plane" "(-4414 -94 456) (-4414 -94 -138) (-414 -94 -138)"
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -37651,7 +37651,7 @@ world
 		}
 		editor
 		{
-			"color" "0 238 203"
+			"color" "0 218 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 			"cordonsolid" "1"
@@ -38308,8 +38308,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -38338,8 +38336,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -38368,8 +38364,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -38398,8 +38392,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -38428,8 +38420,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -38458,8 +38448,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -38488,8 +38476,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -41810,8 +41796,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_table.mdl"
@@ -41839,8 +41823,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_table.mdl"
@@ -41868,8 +41850,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_table.mdl"
@@ -41897,8 +41877,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_table.mdl"
@@ -41926,8 +41904,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_table.mdl"
@@ -44423,8 +44399,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -44452,8 +44426,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -44481,8 +44453,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -44510,8 +44480,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -44539,8 +44507,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_tray.mdl"
@@ -44568,8 +44534,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -44597,8 +44561,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -44626,8 +44588,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_pizza.mdl"
@@ -44655,8 +44615,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/cafeteria_cup.mdl"
@@ -44684,8 +44642,6 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/au_skeld/emergency_button.mdl"
@@ -44746,7 +44702,6 @@ entity
 {
 	"id" "50981"
 	"classname" "infodecal"
-	"angles" "0 0 0"
 	"texture" "au_skeld/cafeteria_wall_panel"
 	"origin" "-2016 2000 48"
 	editor
@@ -44770,6 +44725,48 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "52153"
+	"classname" "prop_static"
+	"angles" "0 225 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/au_skeld/data_pad.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-1968 1955 48"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "52594"
+	"classname" "infodecal"
+	"angles" "0 0 0"
+	"texture" "au_skeld/cafeteria_wire_panel"
+	"origin" "-2676 1976 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras

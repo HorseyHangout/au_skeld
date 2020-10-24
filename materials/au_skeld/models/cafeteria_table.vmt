@@ -3,5 +3,5 @@
 	"$basetexture" "au_skeld/models/cafeteria_table"
 	"$surfaceprop" "metalpanel"
 	"$envmap" "env_cubemap"
-	"$envmapmask" "au_skeld/models/cafeteria_table_spec"
+	"$envmaptint" "[0.2 0.2 0.2]""
 }
