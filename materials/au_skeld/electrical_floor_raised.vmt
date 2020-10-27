@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/electrical_floor_raised"
+	"$surfaceprop" "tile"
+}

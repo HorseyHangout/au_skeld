@@ -1,5 +1,5 @@
 "LightmappedGeneric"
 {
-	"$basetexture" "au_skeld/security_floor"
+	"$basetexture" "au_skeld/electrical_floor"
 	"$surfaceprop" "tile"
 }
