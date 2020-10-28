@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/communications_floor"
+	"$surfaceprop" "concrete"
+}

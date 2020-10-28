@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/engine_wall_vent"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "0.25"
+}
