@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/medbay_wall_cross"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "0.25"
+}

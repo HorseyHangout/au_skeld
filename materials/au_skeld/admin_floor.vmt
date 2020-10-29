@@ -1,5 +1,5 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/admin_floor"
-	"$surfaceprop" "carpet"
+	"$surfaceprop" "grass"
 }
