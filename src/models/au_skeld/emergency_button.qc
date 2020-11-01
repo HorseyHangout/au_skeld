@@ -6,3 +6,9 @@ $staticprop
 $scale 1
 
 $sequence idle "emergency_button"
+
+$collisionmodel "emergency_button_phys.smd"
+{
+	$mass 2
+	$concave
+}
