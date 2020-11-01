@@ -3,6 +3,7 @@
 *.log
 *.prt
 *.vmx
+*.blend[1-9]
 
 Thumbs.db
 ehthumbs.db
