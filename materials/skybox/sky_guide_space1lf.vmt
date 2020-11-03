@@ -1,0 +1,7 @@
+unlitgeneric
+{
+	$basetexture "skybox/guide_space2"
+//	$hdrcompressedtexture "skybox/authmoon1bk"
+	$nofog 1
+	$ignorez 0
+}

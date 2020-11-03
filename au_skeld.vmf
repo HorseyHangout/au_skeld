@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "1810"
+	"mapversion" "1818"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,12 +20,12 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1810"
+	"mapversion" "1818"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxpropscreenwidth" "-1"
-	"skyname" "space"
+	"skyname" "sky_guide_space1"
 	solid
 	{
 		"id" "1147"
@@ -63356,16 +63356,16 @@ entity
 {
 	"id" "4874"
 	"classname" "light_environment"
-	"_ambient" "114 136 148 420"
-	"_ambientHDR" "190 209 216 150"
+	"_ambient" "170 130 255 4"
+	"_ambientHDR" "-1 -1 -1 1"
 	"_AmbientScaleHDR" "1"
-	"_light" "242 234 218 560"
-	"_lightHDR" "248 244 237 250"
+	"_light" "250 183 255 6"
+	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
-	"angles" "0 0 0"
-	"pitch" "-56"
-	"SunSpreadAngle" "6"
-	"origin" "-2304 1640 77.5385"
+	"angles" "-31 269 0"
+	"pitch" "-31"
+	"SunSpreadAngle" "20"
+	"origin" "-2304 1640 78"
 	editor
 	{
 		"color" "220 30 220"
@@ -86995,13 +86995,51 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "123719"
+	"classname" "env_tonemap_controller"
+	"targetname" "tonemap_master"
+	connections
+	{
+		"OnUser1" "!self,SetAutoExposureMax,0.75,0,-1"
+		"OnUser1" "!self,SetAutoExposureMin,0.5,0,-1"
+		"OnUser1" "!self,SetBloomScale,0.667,0,-1"
+	}
+	"origin" "-2324 1640 78"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "123726"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "tonemap_master,FireUser1,,0,-1"
+	}
+	"origin" "-2324 1640 94"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-1825.11 1822.41 472.406]"
-		"look" "[-1950.35 1781.61 384.888]"
+		"position" "[-2319.72 1575.5 111.941]"
+		"look" "[-2299.85 1717.68 45.6082]"
 	}
 }
 cordon
