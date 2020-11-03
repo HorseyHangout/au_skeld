@@ -1,5 +1,8 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/hallway_floor"
+	"$bumpmap" "au_skeld/hallway_floor_normal"
 	"$surfaceprop" "metalpanel"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.1 0.1 0.1]"
 }
