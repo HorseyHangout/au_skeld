@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "au_skeld/hallway_door_slide"
+	"$bumpmap" "au_skeld/hallway_door_slide_normal"
+	"$surfaceprop" "metalpanel"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.01 0.01 0.01]"
+}
