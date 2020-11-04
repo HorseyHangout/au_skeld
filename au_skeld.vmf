@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "1818"
+	"mapversion" "1819"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1818"
+	"mapversion" "1819"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -86956,7 +86956,6 @@ entity
 	"id" "122618"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" "1782 1140"
 	"origin" "-2898 1646 48"
 	editor
 	{
@@ -87038,8 +87037,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-2319.72 1575.5 111.941]"
-		"look" "[-2299.85 1717.68 45.6082]"
+		"position" "[-2823.57 1613.9 86.74]"
+		"look" "[-2789.05 1728.52 -16.5929]"
 	}
 }
 cordon
