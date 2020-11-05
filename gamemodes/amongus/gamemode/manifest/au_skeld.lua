@@ -83,7 +83,7 @@ local MANIFEST = {
 			Position = Vector(0, 0),
 		},
 	},
-	Tasks: {
+	Tasks = {
 		-- 'divertPower',
 		'alignEngineOutput',
 		'calibrateDistributor',
@@ -149,7 +149,7 @@ local MANIFEST = {
 
 --  name    position on map
 local SABOTAGE_DOORS = {
-	'foo' = Vector(0, 0),
+	['foo'] = Vector(0, 0),
 }
 
 -------------------------------------------
