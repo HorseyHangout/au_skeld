@@ -14,8 +14,9 @@ local MANIFEST = {
 				BackgroundMaterial = Material('au_skeld/gui/background.png', 'smooth'),
 				OverlayMaterial = Material('au_skeld/gui/overlay.png', 'smooth'),
 
-				Position = Vector(-4217, 2561),
-				Scale = 2.8,
+				Position = Vector(-3576, 1978),
+				Scale = 3.5,
+				Resolution = 4
 			} end
 		end)(),
 	},
