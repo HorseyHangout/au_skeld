@@ -31,7 +31,7 @@
 	"playlooping"
 	{
 		"wave"	"au_skeld/ambient/engines/main.wav"
-		"volume"	"0.2"
+		"volume"	"0.4"
 	}
 }
 
@@ -45,7 +45,7 @@
 	"playlooping"
 	{
 		"wave"	"au_skeld/ambient/engines/main.wav"
-		"volume"	"0.3"
+		"volume"	"0.5"
 	}
 
 	// better handled by ambient_generic due to random timing
@@ -171,15 +171,22 @@
 		"name"	"AUSkeld.Engines"
 	}
 
-	"playsoundscape"
+	// Have to list these out manually, since the engine can
+	// only play one instance of a sound at a time
+
+	// Security
+	"playlooping"
 	{
-		"name"	"AUSkeld.Security"
-		"volume"	"0.75"
+		"wave"	"au_skeld/ambient/security.wav"
+		// 0.5 * 0.75
+		"volume"	"0.375"
 	}
 
-	"playsoundscape"
+	// Reactor
+	"playlooping"
 	{
-		"name"	"AUSkeld.Reactor"
-		"volume"	"0.75"
+		"wave"	"au_skeld/ambient/reactor.wav"
+		// 0.5 * 0.75
+		"volume"	"0.375"
 	}
 }
