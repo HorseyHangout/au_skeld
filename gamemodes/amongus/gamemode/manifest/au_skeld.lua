@@ -23,63 +23,63 @@ local MANIFEST = {
 	Labels = {
 		-- Center
 		{
-			Text = _('areas.cafeteria'),
+			Text = _('area.cafeteria'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.storage'),
+			Text = _('area.storage'),
 			Position = Vector(0, 0),
 		},
 
 		-- Left side
 		{
-			Text = _('areas.medbay'),
+			Text = _('area.medbay'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.upperEngine'),
+			Text = _('area.upperEngine'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.reactor'),
+			Text = _('area.reactor'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.security'),
+			Text = _('area.security'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.lowerEngine'),
+			Text = _('area.lowerEngine'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.electrical'),
+			Text = _('area.electrical'),
 			Position = Vector(0, 0),
 		},
 
 		-- Right side
 		{
-			Text = _('areas.weapons'),
+			Text = _('area.weapons'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.o2'),
+			Text = _('area.o2'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.navigation'),
+			Text = _('area.navigation'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.admin'),
+			Text = _('area.admin'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.shields'),
+			Text = _('area.shields'),
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('areas.communications'),
+			Text = _('area.communications'),
 			Position = Vector(0, 0),
 		},
 	},
