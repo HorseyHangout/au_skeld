@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+	"name"			"au_skeld"
+	"author_name"	"HorseyHangout"
+
+	"info"			"The Skeld map for the Garry's Mod Among Us gamemode by NotMyWing"
+
+	"override"		"0"
+}
