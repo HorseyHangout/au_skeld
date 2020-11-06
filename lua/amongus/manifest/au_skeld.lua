@@ -1,3 +1,5 @@
+AddCSLuaFile()
+
 --- Helper function to retrieve a language entry from the gamemode translation table
 -- Uses the client's default language
 -- @param entry The language entry to retrieve
