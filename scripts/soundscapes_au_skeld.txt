@@ -31,7 +31,7 @@
 	"playlooping"
 	{
 		"wave"	"au_skeld/ambient/engines/main.wav"
-		"volume"	"0.5"
+		"volume"	"0.2"
 	}
 }
 
@@ -39,7 +39,13 @@
 {
 	"playsoundscape"
 	{
-		"name"	"AUSkeld.Engines"
+		"name"	"AUSkeld.Main"
+	}
+
+	"playlooping"
+	{
+		"wave"	"au_skeld/ambient/engines/main.wav"
+		"volume"	"0.3"
 	}
 
 	// better handled by ambient_generic due to random timing
@@ -50,12 +56,12 @@
 	// 	"position"	"0"
 	// }
 
-	"playlooping"
-	{
-		"wave"	"au_skeld/ambient/engines/engineshock.wav"
-		"volume"	"0.5"
-		"position"	"0"
-	}
+	// "playlooping"
+	// {
+	// 	"wave"	"au_skeld/ambient/engines/engineshock.wav"
+	// 	"volume"	"0.5"
+	// 	"position"	"0"
+	// }
 }
 
 "AUSkeld.Communications"
