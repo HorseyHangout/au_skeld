@@ -1,9 +1,9 @@
 -- return -- temporarily disable
 
-if GAMEMODE.Name ~= "Among Us" then return end
+-- if GAMEMODE.Name ~= "Among Us" then return end
 
 if SERVER then
-	util.AddNetworkString("au_skeld cameras open")
+	local payload = {}
 
 	hook.Add("PlayerUse", "au_skeld cameras monitor use", function(ply, ent)
 		if ent:GetName() == "camera_button" then
@@ -16,14 +16,25 @@ if SERVER then
 
 			local cameraPoint = ents.FindByName("camera_viewpoint_navigation")[1]
 
-			local payload = {
+			payload = {
 				cameraData = {
 					position = cameraPoint:GetPos(),
 					angle = cameraPoint:GetAngles()
 				}
 			}
+			
 			GAMEMODE:Player_OpenVGUI(playerTable, "cameraTest", payload) 
 		end
+	end)
+
+	hook.Add("SetupPlayerVisibility", "au_skeld cameras add PVS", function (ply, viewEnt)
+		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
+		if not playerTable then return end -- player not found?
+		if GAMEMODE.GameData.CurrentVGUI[playerTable] ~= "cameraTest" then return end -- player not on cams
+
+		local cameraPoint = ents.FindByName("camera_viewpoint_navigation")[1]
+
+		AddOriginToPVS(cameraPoint:GetPos())
 	end)
 else
 	local noop = function() end
