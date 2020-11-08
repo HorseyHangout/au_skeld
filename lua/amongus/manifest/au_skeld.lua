@@ -89,7 +89,7 @@ local MANIFEST = {
 		},
 	},
 	Tasks = {
-		-- 'divertPower',
+		'divertPower',
 		'alignEngineOutput',
 		'calibrateDistributor',
 		'chartCourse',
@@ -104,7 +104,7 @@ local MANIFEST = {
 		'submitScan',
 		'swipeCard',
 		'unlockManifolds',
-		-- 'uploadData',
+		'uploadData',
 		'fuelEngines',
 	},
 	Sabotages = {
