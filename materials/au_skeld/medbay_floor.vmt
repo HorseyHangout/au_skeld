@@ -1,4 +1,5 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/medbay_floor"
+	"$surfaceprop" "tile"
 }
