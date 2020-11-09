@@ -9,6 +9,6 @@ $sequence idle "lever"
 
 $collisionmodel "lever_phys.smd"
 {
-	$mass 
+	$mass 20
 	$concave
 }
