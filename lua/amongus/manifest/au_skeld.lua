@@ -149,15 +149,15 @@ local MANIFEST = {
 --  name    position on map
 local SABOTAGE_DOORS = {
 	-- Center
-	cafeteria = Vector(550/1024, 220/1024),
-	storage = Vector(520/1024, 810/1024),
+	sabotage_door_cafeteria = Vector(550/1024, 220/1024),
+	sabotage_door_storage   = Vector(520/1024, 810/1024),
 
 	-- Left side
-	medbay = Vector(350/1024, 400/1024),
-	upper_engine = Vector(160/1024, 260/1024),
-	security = Vector(250/1024, 500/1024),
-	lower_engine = Vector(160/1024, 790/1024),
-	electrical = Vector(340/1024, 680/1024),
+	sabotage_door_medbay       = Vector(350/1024, 400/1024),
+	sabotage_door_upper_engine = Vector(160/1024, 260/1024),
+	sabotage_door_security     = Vector(250/1024, 500/1024),
+	sabotage_door_lower_engine = Vector(160/1024, 790/1024),
+	sabotage_door_electrical   = Vector(340/1024, 680/1024),
 }
 
 -------------------------------------------
