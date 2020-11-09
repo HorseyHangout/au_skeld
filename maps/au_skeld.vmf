@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "1956"
+	"mapversion" "1961"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1956"
+	"mapversion" "1961"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -74520,6 +74520,110 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	group
+	{
+		"id" "138089"
+		editor
+		{
+			"color" "131 120 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138090"
+		editor
+		{
+			"color" "131 120 0"
+			"groupid" "138089"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138101"
+		editor
+		{
+			"color" "185 138 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138102"
+		editor
+		{
+			"color" "185 138 0"
+			"groupid" "138101"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138113"
+		editor
+		{
+			"color" "159 216 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138114"
+		editor
+		{
+			"color" "159 216 0"
+			"groupid" "138113"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138125"
+		editor
+		{
+			"color" "189 230 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138126"
+		editor
+		{
+			"color" "189 230 0"
+			"groupid" "138125"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138137"
+		editor
+		{
+			"color" "168 229 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "138143"
+		editor
+		{
+			"color" "206 251 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -74536,7 +74640,7 @@ entity
 	"Speed" "120"
 	"SpreadSpeed" "15"
 	"StartSize" "10"
-	"targetname" "effect_engine_upper_steam_right"
+	"targetname" "effect_engine_steam_right"
 	"type" "0"
 	"origin" "-2944 1588 48"
 	editor
@@ -74568,7 +74672,7 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_steam_right"
+	"targetname" "sound_engine_steam_right"
 	"volstart" "0"
 	"origin" "-2944 1588 48"
 	editor
@@ -74595,7 +74699,7 @@ entity
 	"Speed" "120"
 	"SpreadSpeed" "15"
 	"StartSize" "10"
-	"targetname" "effect_engine_upper_steam_left"
+	"targetname" "effect_engine_steam_left"
 	"type" "0"
 	"origin" "-2944 1456 48"
 	editor
@@ -74627,9 +74731,9 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_steam_left"
+	"targetname" "sound_engine_steam_left"
 	"volstart" "0"
-	"origin" "-2944 1455.65 48"
+	"origin" "-2944 1456 48"
 	editor
 	{
 		"color" "206 251 0"
@@ -79737,11 +79841,11 @@ entity
 	"rendercolor" "179 255 255"
 	"renderfx" "0"
 	"StrikeTime" "1"
-	"targetname" "effect_engine_upper_shock_beam3"
+	"targetname" "effect_engine_shock_beam3"
 	"texture" "sprites/laserbeam.spr"
 	"TextureScroll" "35"
 	"TouchType" "0"
-	"origin" "-3220 1502 88"
+	"origin" "-3220 1501 88"
 	editor
 	{
 		"color" "189 230 0"
@@ -79757,7 +79861,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam3_start"
-	"origin" "-3168 1502 88"
+	"origin" "-3168 1501 88"
 	editor
 	{
 		"color" "189 230 0"
@@ -79773,7 +79877,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam3_end"
-	"origin" "-3088 1502 88"
+	"origin" "-3088 1501 88"
 	editor
 	{
 		"color" "189 230 0"
@@ -79803,9 +79907,9 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_shock_beam3"
+	"targetname" "sound_engine_shock_beam3"
 	"volstart" "0"
-	"origin" "-3130 1502 88"
+	"origin" "-3130 1501 88"
 	editor
 	{
 		"color" "189 230 0"
@@ -79835,11 +79939,11 @@ entity
 	"rendercolor" "179 255 255"
 	"renderfx" "0"
 	"StrikeTime" "1"
-	"targetname" "effect_engine_upper_shock_beam4"
+	"targetname" "effect_engine_shock_beam4"
 	"texture" "sprites/laserbeam.spr"
 	"TextureScroll" "35"
 	"TouchType" "0"
-	"origin" "-3220 1516 88"
+	"origin" "-3220 1515 88"
 	editor
 	{
 		"color" "159 216 0"
@@ -79855,7 +79959,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam4_start"
-	"origin" "-3168 1516 88"
+	"origin" "-3168 1515 88"
 	editor
 	{
 		"color" "159 216 0"
@@ -79871,7 +79975,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam4_end"
-	"origin" "-3088 1516 88"
+	"origin" "-3088 1515 88"
 	editor
 	{
 		"color" "159 216 0"
@@ -79901,9 +80005,9 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_shock_beam4"
+	"targetname" "sound_engine_shock_beam4"
 	"volstart" "0"
-	"origin" "-3130 1516 88"
+	"origin" "-3130 1515 88"
 	editor
 	{
 		"color" "159 216 0"
@@ -79933,11 +80037,11 @@ entity
 	"rendercolor" "179 255 255"
 	"renderfx" "0"
 	"StrikeTime" "1"
-	"targetname" "effect_engine_upper_shock_beam1"
+	"targetname" "effect_engine_shock_beam1"
 	"texture" "sprites/laserbeam.spr"
 	"TextureScroll" "35"
 	"TouchType" "0"
-	"origin" "-3220 1530 88"
+	"origin" "-3220 1529 88"
 	editor
 	{
 		"color" "185 138 0"
@@ -79953,7 +80057,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam1_start"
-	"origin" "-3168 1530 88"
+	"origin" "-3168 1529 88"
 	editor
 	{
 		"color" "185 138 0"
@@ -79969,7 +80073,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam1_end"
-	"origin" "-3088 1530 88"
+	"origin" "-3088 1529 88"
 	editor
 	{
 		"color" "185 138 0"
@@ -79999,9 +80103,9 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_shock_beam1"
+	"targetname" "sound_engine_shock_beam1"
 	"volstart" "0"
-	"origin" "-3130 1530 88"
+	"origin" "-3130 1529 88"
 	editor
 	{
 		"color" "185 138 0"
@@ -80031,11 +80135,11 @@ entity
 	"rendercolor" "179 255 255"
 	"renderfx" "0"
 	"StrikeTime" "1"
-	"targetname" "effect_engine_upper_shock_beam2"
+	"targetname" "effect_engine_shock_beam2"
 	"texture" "sprites/laserbeam.spr"
 	"TextureScroll" "35"
 	"TouchType" "0"
-	"origin" "-3220 1544 88"
+	"origin" "-3220 1543 88"
 	editor
 	{
 		"color" "131 120 0"
@@ -80051,7 +80155,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam2_start"
-	"origin" "-3168 1544 88"
+	"origin" "-3168 1543 88"
 	editor
 	{
 		"color" "131 120 0"
@@ -80067,7 +80171,7 @@ entity
 	"classname" "info_target"
 	"angles" "0 0 0"
 	"targetname" "effect_engine_upper_shock_beam2_end"
-	"origin" "-3088 1544 88"
+	"origin" "-3088 1543 88"
 	editor
 	{
 		"color" "131 120 0"
@@ -80097,9 +80201,9 @@ entity
 	"spawnflags" "48"
 	"spindown" "0"
 	"spinup" "0"
-	"targetname" "sound_engine_upper_shock_beam2"
+	"targetname" "sound_engine_shock_beam2"
 	"volstart" "0"
-	"origin" "-3130 1544 88"
+	"origin" "-3130 1543 88"
 	editor
 	{
 		"color" "131 120 0"
@@ -82947,13 +83051,13 @@ entity
 	"LowerRandomBound" "1"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "sound_engine_upper_steam_left_timer"
+	"targetname" "sound_engine_steam_left_timer"
 	"UpperRandomBound" "2"
 	"UseRandomTime" "1"
 	connections
 	{
-		"OnTimer" "sound_engine_upper_steam_left_fire,Trigger,,0,-1"
-		"OnTimer" "sound_engine_upper_steam_right_timer,Enable,,0,-1"
+		"OnTimer" "sound_engine_steam_left_fire,Trigger,,0,-1"
+		"OnTimer" "sound_engine_steam_right_timer,Enable,,0,-1"
 	}
 	"origin" "-2946 1514 88"
 	editor
@@ -82970,13 +83074,13 @@ entity
 	"classname" "logic_relay"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "sound_engine_upper_steam_left_fire"
+	"targetname" "sound_engine_steam_left_fire"
 	connections
 	{
-		"OnTrigger" "sound_engine_upper_steam_left_randomizer_pitch,PickRandom,,0,-1"
-		"OnTrigger" "sound_engine_upper_steam_left,PlaySound,,0,-1"
-		"OnTrigger" "effect_engine_upper_steam_left,TurnOn,,0,-1"
-		"OnTrigger" "effect_engine_upper_steam_left,TurnOff,,0.4,-1"
+		"OnTrigger" "sound_engine_steam_left_randomizer_pitch,PickRandom,,0,-1"
+		"OnTrigger" "sound_engine_steam_left,PlaySound,,0,-1"
+		"OnTrigger" "effect_engine_steam_left,TurnOn,,0,-1"
+		"OnTrigger" "effect_engine_steam_left,TurnOff,,0.4,-1"
 	}
 	"origin" "-2944 1456 88"
 	editor
@@ -82991,18 +83095,18 @@ entity
 {
 	"id" "19462"
 	"classname" "logic_case"
-	"targetname" "sound_engine_upper_steam_right_randomizer_pitch"
+	"targetname" "sound_engine_steam_right_randomizer_pitch"
 	connections
 	{
-		"OnCase01" "sound_engine_upper_steam_right,Pitch,80,0,-1"
-		"OnCase02" "sound_engine_upper_steam_right,Pitch,85,0,-1"
-		"OnCase03" "sound_engine_upper_steam_right,Pitch,90,0,-1"
-		"OnCase04" "sound_engine_upper_steam_right,Pitch,95,0,-1"
-		"OnCase05" "sound_engine_upper_steam_right,Pitch,100,0,-1"
-		"OnCase07" "sound_engine_upper_steam_right,Pitch,110,0,-1"
-		"OnCase06" "sound_engine_upper_steam_right,Pitch,105,0,-1"
-		"OnCase08" "sound_engine_upper_steam_right,Pitch,115,0,-1"
-		"OnCase09" "sound_engine_upper_steam_right,Pitch,120,0,-1"
+		"OnCase01" "sound_engine_steam_right,Pitch,80,0,-1"
+		"OnCase02" "sound_engine_steam_right,Pitch,85,0,-1"
+		"OnCase03" "sound_engine_steam_right,Pitch,90,0,-1"
+		"OnCase04" "sound_engine_steam_right,Pitch,95,0,-1"
+		"OnCase05" "sound_engine_steam_right,Pitch,100,0,-1"
+		"OnCase07" "sound_engine_steam_right,Pitch,110,0,-1"
+		"OnCase06" "sound_engine_steam_right,Pitch,105,0,-1"
+		"OnCase08" "sound_engine_steam_right,Pitch,115,0,-1"
+		"OnCase09" "sound_engine_steam_right,Pitch,120,0,-1"
 	}
 	"origin" "-2944 1588 70"
 	editor
@@ -83017,18 +83121,18 @@ entity
 {
 	"id" "19515"
 	"classname" "logic_case"
-	"targetname" "sound_engine_upper_steam_left_randomizer_pitch"
+	"targetname" "sound_engine_steam_left_randomizer_pitch"
 	connections
 	{
-		"OnCase01" "sound_engine_upper_steam_left,Pitch,80,0,-1"
-		"OnCase02" "sound_engine_upper_steam_left,Pitch,85,0,-1"
-		"OnCase03" "sound_engine_upper_steam_left,Pitch,90,0,-1"
-		"OnCase04" "sound_engine_upper_steam_left,Pitch,95,0,-1"
-		"OnCase05" "sound_engine_upper_steam_left,Pitch,100,0,-1"
-		"OnCase07" "sound_engine_upper_steam_left,Pitch,110,0,-1"
-		"OnCase06" "sound_engine_upper_steam_left,Pitch,105,0,-1"
-		"OnCase08" "sound_engine_upper_steam_left,Pitch,115,0,-1"
-		"OnCase09" "sound_engine_upper_steam_left,Pitch,120,0,-1"
+		"OnCase01" "sound_engine_steam_left,Pitch,80,0,-1"
+		"OnCase02" "sound_engine_steam_left,Pitch,85,0,-1"
+		"OnCase03" "sound_engine_steam_left,Pitch,90,0,-1"
+		"OnCase04" "sound_engine_steam_left,Pitch,95,0,-1"
+		"OnCase05" "sound_engine_steam_left,Pitch,100,0,-1"
+		"OnCase07" "sound_engine_steam_left,Pitch,110,0,-1"
+		"OnCase06" "sound_engine_steam_left,Pitch,105,0,-1"
+		"OnCase08" "sound_engine_steam_left,Pitch,115,0,-1"
+		"OnCase09" "sound_engine_steam_left,Pitch,120,0,-1"
 	}
 	"origin" "-2944 1456 70"
 	editor
@@ -102983,13 +103087,13 @@ entity
 	"classname" "logic_relay"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "sound_engine_upper_steam_right_fire"
+	"targetname" "sound_engine_steam_right_fire"
 	connections
 	{
-		"OnTrigger" "effect_engine_upper_steam_right,TurnOff,,0.4,-1"
-		"OnTrigger" "effect_engine_upper_steam_right,TurnOn,,0,-1"
-		"OnTrigger" "sound_engine_upper_steam_right,PlaySound,,0,-1"
-		"OnTrigger" "sound_engine_upper_steam_right_randomizer_pitch,PickRandom,,0,-1"
+		"OnTrigger" "effect_engine_steam_right,TurnOff,,0.4,-1"
+		"OnTrigger" "effect_engine_steam_right,TurnOn,,0,-1"
+		"OnTrigger" "sound_engine_steam_right,PlaySound,,0,-1"
+		"OnTrigger" "sound_engine_steam_right_randomizer_pitch,PickRandom,,0,-1"
 	}
 	"origin" "-2944 1588 88"
 	editor
@@ -103007,12 +103111,12 @@ entity
 	"LowerRandomBound" "0.5"
 	"spawnflags" "0"
 	"StartDisabled" "1"
-	"targetname" "sound_engine_upper_steam_right_timer"
+	"targetname" "sound_engine_steam_right_timer"
 	"UpperRandomBound" "1"
 	"UseRandomTime" "1"
 	connections
 	{
-		"OnTimer" "sound_engine_upper_steam_right_fire,Trigger,,0,-1"
+		"OnTimer" "sound_engine_steam_right_fire,Trigger,,0,-1"
 		"OnTimer" "!self,Disable,,0,-1"
 	}
 	"origin" "-2946 1530 88"
@@ -103031,18 +103135,18 @@ entity
 	"RefireTime" "3.5"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "effect_engine_upper_shock_timer"
+	"targetname" "effect_engine_shock_timer"
 	"UseRandomTime" "0"
 	connections
 	{
-		"OnTimer" "effect_engine_upper_shock_beam1,StrikeOnce,,0,-1"
-		"OnTimer" "effect_engine_upper_shock_beam2,StrikeOnce,,0.55,-1"
-		"OnTimer" "effect_engine_upper_shock_beam3,StrikeOnce,,1.1,-1"
-		"OnTimer" "effect_engine_upper_shock_beam4,StrikeOnce,,1.9,-1"
-		"OnTimer" "sound_engine_upper_shock_beam1,PlaySound,,0,-1"
-		"OnTimer" "sound_engine_upper_shock_beam2,PlaySound,,0.55,-1"
-		"OnTimer" "sound_engine_upper_shock_beam3,PlaySound,,1.1,-1"
-		"OnTimer" "sound_engine_upper_shock_beam4,PlaySound,,1.9,-1"
+		"OnTimer" "effect_engine_shock_beam1,StrikeOnce,,0,-1"
+		"OnTimer" "effect_engine_shock_beam2,StrikeOnce,,0.55,-1"
+		"OnTimer" "effect_engine_shock_beam3,StrikeOnce,,1.1,-1"
+		"OnTimer" "effect_engine_shock_beam4,StrikeOnce,,1.9,-1"
+		"OnTimer" "sound_engine_shock_beam1,PlaySound,,0,-1"
+		"OnTimer" "sound_engine_shock_beam2,PlaySound,,0.55,-1"
+		"OnTimer" "sound_engine_shock_beam3,PlaySound,,1.1,-1"
+		"OnTimer" "sound_engine_shock_beam3,PlaySound,,1.9,-1"
 	}
 	"origin" "-3216 1592 88"
 	editor
@@ -104246,6 +104350,516 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "138091"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"gmod_allowphysgun" "1"
+	"HDRColorScale" "1.0"
+	"life" "0.25"
+	"LightningEnd" "effect_engine_lower_shock_beam2_end"
+	"LightningStart" "effect_engine_lower_shock_beam2_start"
+	"NoiseAmplitude" "0"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "179 255 255"
+	"renderfx" "0"
+	"StrikeTime" "1"
+	"targetname" "effect_engine_shock_beam2"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "-3220 522 88"
+	editor
+	{
+		"color" "131 120 0"
+		"groupid" "138090"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "138094"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam2_start"
+	"origin" "-3168 522 88"
+	editor
+	{
+		"color" "131 120 0"
+		"groupid" "138090"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138096"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam2_end"
+	"origin" "-3088 522 88"
+	editor
+	{
+		"color" "131 120 0"
+		"groupid" "138090"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138098"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/engineshock2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_shock_beam2"
+	"volstart" "0"
+	"origin" "-3130 522 88"
+	editor
+	{
+		"color" "131 120 0"
+		"groupid" "138089"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "138103"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"gmod_allowphysgun" "1"
+	"HDRColorScale" "1.0"
+	"life" "0.25"
+	"LightningEnd" "effect_engine_lower_shock_beam1_end"
+	"LightningStart" "effect_engine_lower_shock_beam1_start"
+	"NoiseAmplitude" "0"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "179 255 255"
+	"renderfx" "0"
+	"StrikeTime" "1"
+	"targetname" "effect_engine_shock_beam1"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "-3220 508 88"
+	editor
+	{
+		"color" "185 138 0"
+		"groupid" "138102"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "138106"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam1_start"
+	"origin" "-3168 508 88"
+	editor
+	{
+		"color" "185 138 0"
+		"groupid" "138102"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138108"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam1_end"
+	"origin" "-3088 508 88"
+	editor
+	{
+		"color" "185 138 0"
+		"groupid" "138102"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138110"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/engineshock1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_shock_beam1"
+	"volstart" "0"
+	"origin" "-3130 508 88"
+	editor
+	{
+		"color" "185 138 0"
+		"groupid" "138101"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "138115"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"gmod_allowphysgun" "1"
+	"HDRColorScale" "1.0"
+	"life" "0.25"
+	"LightningEnd" "effect_engine_lower_shock_beam4_end"
+	"LightningStart" "effect_engine_lower_shock_beam4_start"
+	"NoiseAmplitude" "0"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "179 255 255"
+	"renderfx" "0"
+	"StrikeTime" "1"
+	"targetname" "effect_engine_shock_beam4"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "-3220 494 88"
+	editor
+	{
+		"color" "159 216 0"
+		"groupid" "138114"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "138118"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam4_start"
+	"origin" "-3168 494 88"
+	editor
+	{
+		"color" "159 216 0"
+		"groupid" "138114"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138120"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam4_end"
+	"origin" "-3088 494 88"
+	editor
+	{
+		"color" "159 216 0"
+		"groupid" "138114"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138122"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/engineshock4.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_shock_beam4"
+	"volstart" "0"
+	"origin" "-3130 494 88"
+	editor
+	{
+		"color" "159 216 0"
+		"groupid" "138113"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "138127"
+	"classname" "env_beam"
+	"BoltWidth" "2"
+	"damage" "0"
+	"decalname" "Bigshot"
+	"framerate" "0"
+	"framestart" "0"
+	"gmod_allowphysgun" "1"
+	"HDRColorScale" "1.0"
+	"life" "0.25"
+	"LightningEnd" "effect_engine_lower_shock_beam3_end"
+	"LightningStart" "effect_engine_lower_shock_beam3_start"
+	"NoiseAmplitude" "0"
+	"Radius" "256"
+	"renderamt" "100"
+	"rendercolor" "179 255 255"
+	"renderfx" "0"
+	"StrikeTime" "1"
+	"targetname" "effect_engine_shock_beam3"
+	"texture" "sprites/laserbeam.spr"
+	"TextureScroll" "35"
+	"TouchType" "0"
+	"origin" "-3220 480 88"
+	editor
+	{
+		"color" "189 230 0"
+		"groupid" "138126"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "138130"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam3_start"
+	"origin" "-3168 480 88"
+	editor
+	{
+		"color" "189 230 0"
+		"groupid" "138126"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138132"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"targetname" "effect_engine_lower_shock_beam3_end"
+	"origin" "-3088 480 88"
+	editor
+	{
+		"color" "189 230 0"
+		"groupid" "138126"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "138134"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/engineshock3.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_shock_beam3"
+	"volstart" "0"
+	"origin" "-3130 480 88"
+	editor
+	{
+		"color" "189 230 0"
+		"groupid" "138125"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "138138"
+	"classname" "env_steam"
+	"angles" "-45 90 0"
+	"EndSize" "25"
+	"InitialState" "0"
+	"JetLength" "75"
+	"Rate" "26"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rollspeed" "8"
+	"Speed" "120"
+	"SpreadSpeed" "15"
+	"StartSize" "10"
+	"targetname" "effect_engine_steam_right"
+	"type" "0"
+	"origin" "-2944 568 48"
+	editor
+	{
+		"color" "168 229 0"
+		"groupid" "138137"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 2500]"
+	}
+}
+entity
+{
+	"id" "138140"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/enginesteam.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_steam_right"
+	"volstart" "0"
+	"origin" "-2944 568 48"
+	editor
+	{
+		"color" "168 229 0"
+		"groupid" "138137"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 500]"
+	}
+}
+entity
+{
+	"id" "138144"
+	"classname" "env_steam"
+	"angles" "-45 270 0"
+	"EndSize" "25"
+	"InitialState" "0"
+	"JetLength" "75"
+	"Rate" "26"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"rollspeed" "8"
+	"Speed" "120"
+	"SpreadSpeed" "15"
+	"StartSize" "10"
+	"targetname" "effect_engine_steam_left"
+	"type" "0"
+	"origin" "-2944 436 48"
+	editor
+	{
+		"color" "206 251 0"
+		"groupid" "138143"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 2500]"
+	}
+}
+entity
+{
+	"id" "138146"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "au_skeld/ambient/engines/enginesteam.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "100"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "sound_engine_steam_left"
+	"volstart" "0"
+	"origin" "-2944 436 48"
+	editor
+	{
+		"color" "206 251 0"
+		"groupid" "138143"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 500]"
 	}
 }
 cameras
