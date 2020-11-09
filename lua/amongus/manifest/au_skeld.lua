@@ -3,14 +3,6 @@ AddCSLuaFile()
 AddCSLuaFile('au_skeld/cameras.lua')
 include('au_skeld/cameras.lua')
 
---- Helper function to retrieve a language entry from the gamemode translation table
--- Uses the client's default language
--- @param entry The language entry to retrieve
--- @return The language string from the gamemode
-local function _(entry)
-	return GM.Lang:GetEntry(entry)()
-end
-
 local MANIFEST = {
 	PrintName = 'The Skeld',
 	Map = {
@@ -28,63 +20,63 @@ local MANIFEST = {
 	Labels = {
 		-- Center
 		{
-			Text = _('area.cafeteria'),
+			Text = 'area.cafeteria',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.storage'),
+			Text = 'area.storage',
 			Position = Vector(0, 0),
 		},
 
 		-- Left side
 		{
-			Text = _('area.medbay'),
+			Text = 'area.medbay',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.upperEngine'),
+			Text = 'area.upperEngine',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.reactor'),
+			Text = 'area.reactor',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.security'),
+			Text = 'area.security',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.lowerEngine'),
+			Text = 'area.lowerEngine',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.electrical'),
+			Text = 'area.electrical',
 			Position = Vector(0, 0),
 		},
 
 		-- Right side
 		{
-			Text = _('area.weapons'),
+			Text = 'area.weapons',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.o2'),
+			Text = 'area.o2',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.navigation'),
+			Text = 'area.navigation',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.admin'),
+			Text = 'area.admin',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.shields'),
+			Text = 'area.shields',
 			Position = Vector(0, 0),
 		},
 		{
-			Text = _('area.communications'),
+			Text = 'area.communications',
 			Position = Vector(0, 0),
 		},
 	},
