@@ -1,6 +1,6 @@
 if SERVER then
 	local function getCameras()
-		local cameraPrefix = "camera_viewpoint_"
+		local cameraPrefix = 'camera_viewpoint_'
 		local cameraData = {}
 
 		for i, v in ipairs(ents.GetAll()) do
@@ -24,21 +24,21 @@ if SERVER then
 
 		local payload = { cameraData = getCameras() }
 
-		GAMEMODE:Player_OpenVGUI(playerTable, "securityCams", payload) 
+		GAMEMODE:Player_OpenVGUI(playerTable, 'securityCams', payload) 
 	end
 
-	concommand.Add("au_debug_open_cameras", openCameras)
+	concommand.Add('au_debug_open_cameras', openCameras)
 
-	hook.Add("PlayerUse", "au_skeld cameras monitor use", function(ply, ent)
-		if ent:GetName() == "camera_button" then
+	hook.Add('PlayerUse', 'au_skeld cameras monitor use', function(ply, ent)
+		if ent:GetName() == 'camera_button' then
 			openCameras(ply)
 		end
 	end)
 
-	hook.Add("SetupPlayerVisibility", "au_skeld cameras add PVS", function (ply, viewEnt)
+	hook.Add('SetupPlayerVisibility', 'au_skeld cameras add PVS', function (ply, viewEnt)
 		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
 		if not playerTable then return end -- player not found?
-		if GAMEMODE.GameData.CurrentVGUI[playerTable] ~= "securityCams" then return end -- player not on cams
+		if GAMEMODE.GameData.CurrentVGUI[playerTable] ~= 'securityCams' then return end -- player not on cams
 
 		for k, v in pairs(getCameras()) do
 			AddOriginToPVS(v.pos)
@@ -47,8 +47,8 @@ if SERVER then
 else
 	local noop = function() end
 	local cameraOrder = {
-		"navigation",   "admin",
-		"upper_engine", "security",
+		'navigation',   'admin',
+		'upper_engine', 'security',
 	}
 	local orthos = {
 		navigation = {
@@ -77,11 +77,11 @@ else
 		}
 	}
 
-	hook.Add("GMAU OpenVGUI", "au_skeld cameras GUI open", function(payload)
+	hook.Add('GMAU OpenVGUI', 'au_skeld cameras GUI open', function(payload)
 		if not payload.cameraData then return end
 
-		local base = vgui.Create("AmongUsVGUIBase")
-		local panel = vgui.Create("DPanel")
+		local base = vgui.Create('AmongUsVGUIBase')
+		local panel = vgui.Create('DPanel')
 		local width = 0.55 * ScrW()
 		local height = 0.7 * ScrH()
 		local margin = math.min(width, height) * 0.03
@@ -89,7 +89,7 @@ else
 		panel:SetBackgroundColor(Color(64, 64, 64))
 
 		for i = 0, 1 do
-			local row = panel:Add("DPanel")
+			local row = panel:Add('DPanel')
 			row:SetTall(height/2)
 			row:Dock(TOP)
 			row.Paint = function() end
@@ -98,12 +98,12 @@ else
 				local curCameraName = cameraOrder[(i * 2) + j]
 				local curCamera = payload.cameraData[curCameraName]
 
-				local camContainer = row:Add("DPanel")
+				local camContainer = row:Add('DPanel')
 				camContainer:SetWide(width/2)
 				camContainer:Dock(LEFT)
 				camContainer.Paint = function() end
 
-				local cam = camContainer:Add("DPanel")
+				local cam = camContainer:Add('DPanel')
 				cam:DockMargin(
 					margin,
 					i == 1 and 0 or margin,

@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-AddCSLuaFile("au_skeld/cameras.lua")
+AddCSLuaFile('au_skeld/cameras.lua')
 include('au_skeld/cameras.lua')
 
 --- Helper function to retrieve a language entry from the gamemode translation table
