@@ -1,5 +1,7 @@
 if SERVER then
-	local function getCameras()
+	local playersOnCameras = {}
+
+	local function getCameraViewpointEnts()
 		local cameraPrefix = 'camera_viewpoint_'
 		local cameraData = {}
 
@@ -16,20 +18,43 @@ if SERVER then
 		return cameraData
 	end
 
+	local function updateCameraModels()
+		local cameraName = 'security_cam'
+		local numPlayersOnCams = 0
+
+		for _, v in pairs(playersOnCameras) do
+			if v then
+				numPlayersOnCams = numPlayersOnCams + 1
+			end
+		end
+
+		for i, v in ipairs(ents.FindByName(cameraName)) do
+			local skin = numPlayersOnCams > 0 and 1 or 0
+			v:SetSkin(skin)
+		end
+	end
+
 	local function openCameras(ply)
 		-- This isn't particularly nice, I know.
 		-- I just don't have any fancy wrappers yet.
 		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
 		if not playerTable then return end
 
-		local payload = { cameraData = getCameras() }
+		local payload = { cameraData = getCameraViewpointEnts() }
 
-		GAMEMODE:Player_OpenVGUI(playerTable, 'securityCams', payload) 
+		updateCameraModels()
+
+		playersOnCameras[playerTable] = true
+
+		GAMEMODE:Player_OpenVGUI(playerTable, 'securityCams', payload, function()
+			playersOnCameras[playerTable] = false
+			updateCameraModels()
+		end)
 	end
 
 	concommand.Add('au_debug_open_cameras', openCameras)
 
-	hook.Add('PlayerUse', 'au_skeld cameras monitor use', function(ply, ent)
+	hook.Add('PlayerUse', 'au_skeld cameras monitor use', function (ply, ent)
 		if ent:GetName() == 'camera_button' then
 			openCameras(ply)
 		end
@@ -40,9 +65,17 @@ if SERVER then
 		if not playerTable then return end -- player not found?
 		if GAMEMODE.GameData.CurrentVGUI[playerTable] ~= 'securityCams' then return end -- player not on cams
 
-		for k, v in pairs(getCameras()) do
+		for k, v in pairs(getCameraViewpointEnts()) do
 			AddOriginToPVS(v.pos)
 		end
+	end)
+
+	hook.Add('PlayerDisconnected', 'au_skeld cameras fix player count', function (ply)
+		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
+		if not playerTable then return end -- player not found?
+
+		if playersOnCameras[playerTable] then playersOnCameras[playerTable] = false end
+		updateCameraModels()
 	end)
 else
 	local noop = function() end
