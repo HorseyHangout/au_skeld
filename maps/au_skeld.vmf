@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2101"
+	"mapversion" "2104"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2101"
+	"mapversion" "2104"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -94350,41 +94350,6 @@ entity
 }
 entity
 {
-	"id" "52153"
-	"classname" "prop_task_button"
-	"angles" "0 225 0"
-	"areaname" "area.cafeteria"
-	"disablereceiveshadows" "0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"gmod_allowphysgun" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/au_skeld/data_pad.mdl"
-	"origin" "-1324 1863 48"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"taskname" "uploadData"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
 	"id" "58001"
 	"classname" "prop_static"
 	"angles" "0 90 0"
@@ -108376,6 +108341,41 @@ entity
 	"StartDisabled" "0"
 	"targetname" "security_cam"
 	"origin" "-483 1112 81"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "52153"
+	"classname" "prop_task_button"
+	"angles" "0 225 0"
+	"areaname" "area.cafeteria"
+	"disablereceiveshadows" "0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gmod_allowphysgun" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/au_skeld/data_pad.mdl"
+	"origin" "-1324 1863 48"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"taskname" "uploadData"
 	editor
 	{
 		"color" "220 30 220"
