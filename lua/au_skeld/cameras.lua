@@ -77,6 +77,11 @@ if SERVER then
 		if playersOnCameras[playerTable] then playersOnCameras[playerTable] = false end
 		updateCameraModels()
 	end)
+
+	hook.Add('GMAU GameStart', function ()
+		playersOnCameras = {}
+		updateCameraModels()
+	end)
 else
 	local noop = function() end
 	local cameraOrder = {
