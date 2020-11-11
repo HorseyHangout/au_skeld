@@ -91,7 +91,7 @@ local MANIFEST = {
 		'cleanO2Filter',
 		'clearAsteroids',
 		'emptyGarbage',
-		-- 'fixWiring',
+		'fixWiring',
 		'inspectSample',
 		'primeShields',
 		'stabilizeSteering',
