@@ -41,10 +41,9 @@ if SERVER then
 		if not playerTable then return end
 
 		local payload = { cameraData = getCameraViewpointEnts() }
-
-		updateCameraModels()
-
+		
 		playersOnCameras[playerTable] = true
+		updateCameraModels()
 
 		GAMEMODE:Player_OpenVGUI(playerTable, 'securityCams', payload, function()
 			playersOnCameras[playerTable] = false
@@ -87,32 +86,6 @@ else
 	local cameraOrder = {
 		'navigation',   'admin',
 		'upper_engine', 'security',
-	}
-	local orthos = {
-		navigation = {
-			top = -275,
-			bottom = 275,
-			left = -250,
-			right = 250,
-		},
-		admin = {
-			top = -150,
-			bottom = 250,
-			left = -225,
-			right = 165,
-		},
-		upper_engine = {
-			top = -125,
-			bottom = 300,
-			left = -300,
-			right = 300,
-		},
-		security = {
-			top = -175,
-			bottom = 175,
-			left = -180,
-			right = 180,
-		}
 	}
 
 	hook.Add('GMAU OpenVGUI', 'au_skeld cameras GUI open', function(payload)
@@ -165,9 +138,8 @@ else
 							y = y,
 							w = w,
 							h = h,
-							fov = 75,
+							fov = 125,
 							drawviewmodel = false,
-							ortho = orthos[curCameraName],
 						})
 
 						halo.Render = oldHalo
