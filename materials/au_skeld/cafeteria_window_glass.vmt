@@ -6,5 +6,5 @@
 	"$translucent" "1"
 	"$envmapcontrast" "1"
 	"$envmapsaturation" "1"
-	"$envmaptint" "[ .3 .3 .3]"
+	"$envmaptint" "[0.3 0.3 0.3]"
 }

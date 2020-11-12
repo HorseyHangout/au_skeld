@@ -3,5 +3,5 @@
 	"$basetexture" "au_skeld/models/lever"
 	"$surfaceprop" "metal"
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[0.2 0.2 0.2]""
+	"$envmaptint" "[0.2 0.2 0.2]"
 }
