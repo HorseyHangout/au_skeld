@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2172"
+	"mapversion" "2179"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2172"
+	"mapversion" "2179"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -107853,8 +107853,8 @@ entity
 	"viewangle" "0 345 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
 		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.security,Link,,0,-1"
 	}
 	editor
 	{
@@ -107893,8 +107893,7 @@ entity
 	"viewangle" "0 135 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.reactorSouth,Link,,0,-1"
 	}
 	editor
 	{
@@ -107933,8 +107932,7 @@ entity
 	"viewangle" "0 90 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.lowerEngine,Link,,0,-1"
 	}
 	editor
 	{
@@ -107973,8 +107971,7 @@ entity
 	"viewangle" "0 315 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.upperEngine,Link,,0,-1"
 	}
 	editor
 	{
@@ -108013,8 +108010,7 @@ entity
 	"viewangle" "0 225 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.reactor,Link,,0,-1"
 	}
 	editor
 	{
@@ -108053,8 +108049,8 @@ entity
 	"viewangle" "0 30 0"
 	connections
 	{
+		"Link" "vent.security,Link,,0,-1"
 		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
 	}
 	editor
 	{
@@ -108093,8 +108089,8 @@ entity
 	"viewangle" "0 160 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.admin,Link,,0,-1"
+		"Link" "vent.navHallway,Link,,0,-1"
 	}
 	editor
 	{
@@ -108133,8 +108129,8 @@ entity
 	"viewangle" "0 315 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.admin,Link,,0,-1"
+		"Link" "vent.cafeteria,Link,,0,-1"
 	}
 	editor
 	{
@@ -108173,8 +108169,8 @@ entity
 	"viewangle" "0 45 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.cafeteria,Link,,0,-1"
+		"Link" "vent.navHallway,Link,,0,-1"
 	}
 	editor
 	{
@@ -108213,8 +108209,7 @@ entity
 	"viewangle" "0 100 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.navigationSouth,Link,,0,-1"
 	}
 	editor
 	{
@@ -108253,8 +108248,7 @@ entity
 	"viewangle" "0 270 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.navigation,Link,,0,-1"
 	}
 	editor
 	{
@@ -108293,8 +108287,7 @@ entity
 	"viewangle" "0 60 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.shields,Link,,0,-1"
 	}
 	editor
 	{
@@ -108333,8 +108326,7 @@ entity
 	"viewangle" "0 300 0"
 	connections
 	{
-		"Link" "vent.electrical,Link,,0,-1"
-		"Link" "vent.medbay,Link,,0,-1"
+		"Link" "vent.weapons,Link,,0,-1"
 	}
 	editor
 	{
