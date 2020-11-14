@@ -69,6 +69,7 @@ if SERVER then
 		end
 	end)
 
+	-- TODO: Remove once UI close callback is called on player disconnection
 	hook.Add('PlayerDisconnected', 'au_skeld cameras fix player count', function (ply)
 		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
 		if not playerTable then return end -- player not found?
