@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2191"
+	"mapversion" "2193"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2191"
+	"mapversion" "2193"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -91955,9 +91955,8 @@ entity
 	connections
 	{
 		"OnTrigger" "sound_engine_steam_left_randomizer_pitch,PickRandom,,0,-1"
-		"OnTrigger" "sound_engine_steam_left,PlaySound,,0,-1"
-		"OnTrigger" "effect_engine_steam_left,TurnOn,,0,-1"
 		"OnTrigger" "effect_engine_steam_left,TurnOff,,0.4,-1"
+		"OnTrigger" "effect_engine_steam_left,TurnOn,,0,-1"
 	}
 	"origin" "-2944 1456 88"
 	editor
@@ -105587,7 +105586,6 @@ entity
 	{
 		"OnTrigger" "effect_engine_steam_right,TurnOff,,0.4,-1"
 		"OnTrigger" "effect_engine_steam_right,TurnOn,,0,-1"
-		"OnTrigger" "sound_engine_steam_right,PlaySound,,0,-1"
 		"OnTrigger" "sound_engine_steam_right_randomizer_pitch,PickRandom,,0,-1"
 	}
 	"origin" "-2944 1588 88"
@@ -105641,7 +105639,7 @@ entity
 		"OnTimer" "sound_engine_shock_beam1,PlaySound,,0,-1"
 		"OnTimer" "sound_engine_shock_beam2,PlaySound,,0.55,-1"
 		"OnTimer" "sound_engine_shock_beam3,PlaySound,,1.1,-1"
-		"OnTimer" "sound_engine_shock_beam3,PlaySound,,1.9,-1"
+		"OnTimer" "sound_engine_shock_beam4,PlaySound,,1.9,-1"
 	}
 	"origin" "-3216 1592 88"
 	editor
