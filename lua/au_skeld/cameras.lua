@@ -35,10 +35,8 @@ if SERVER then
 	end
 
 	local function openCameras(ply)
-		-- This isn't particularly nice, I know.
-		-- I just don't have any fancy wrappers yet.
-		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
-		if not playerTable then return end
+		if not ply:IsPlaying() then return end
+		local playerTable = ply:GetAUPlayerTable()
 
 		local payload = { cameraData = getCameraViewpointEnts() }
 		
@@ -60,9 +58,7 @@ if SERVER then
 	end)
 
 	hook.Add('SetupPlayerVisibility', 'au_skeld cameras add PVS', function (ply, viewEnt)
-		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
-		if not playerTable then return end -- player not found?
-		if GAMEMODE.GameData.CurrentVGUI[playerTable] ~= 'securityCams' then return end -- player not on cams
+		if ply:GetCurrentVGUI() ~= 'securityCams' then return end -- player not on cams
 
 		for k, v in pairs(getCameraViewpointEnts()) do
 			AddOriginToPVS(v.pos)
@@ -71,8 +67,8 @@ if SERVER then
 
 	-- TODO: Remove once UI close callback is called on player disconnection
 	hook.Add('PlayerDisconnected', 'au_skeld cameras fix player count', function (ply)
-		local playerTable = GAMEMODE.GameData.Lookup_PlayerByEntity[ply]
-		if not playerTable then return end -- player not found?
+		if not ply:IsPlaying() then return end
+		local playerTable = ply:GetAUPlayerTable()
 
 		if playersOnCameras[playerTable] then playersOnCameras[playerTable] = false end
 		updateCameraModels()
