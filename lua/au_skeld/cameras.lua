@@ -74,7 +74,7 @@ if SERVER then
 		updateCameraModels()
 	end)
 
-	hook.Add('GMAU GameStart', function ()
+	hook.Add('GMAU GameStart', 'au_skeld cameras cleanup', function ()
 		playersOnCameras = {}
 		updateCameraModels()
 	end)
