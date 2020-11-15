@@ -3,6 +3,9 @@ AddCSLuaFile()
 AddCSLuaFile('au_skeld/cameras.lua')
 include('au_skeld/cameras.lua')
 
+AddCSLuaFile('au_skeld/admin_map.lua')
+include('au_skeld/admin_map.lua')
+
 local MANIFEST = {
 	PrintName = 'The Skeld',
 	Map = {

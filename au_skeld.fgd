@@ -1,0 +1,6 @@
+@include "base.fgd"
+
+@SolidClass base(trigger_multiple) = trigger_room_bounds :
+	"The bounds of a room, for use on the admin map"
+[
+]
