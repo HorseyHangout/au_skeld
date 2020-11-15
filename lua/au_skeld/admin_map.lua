@@ -53,8 +53,7 @@ if SERVER then
 		end)
 	end
 
-	-- Enumerate all trigger_room_bounds and collect into tables
-	hook.Add('InitPostEntity', 'au_skeld admin map init entities', function ()
+	local function collectRoomTriggers()
 		for _, ent in ipairs(ents.FindByClass('trigger_room_bounds')) do
 			if IsValid(ent) and string.sub(ent:GetName(), 1, string.len(roomTriggerNamePrefix)) == roomTriggerNamePrefix then
 				local roomName = roomTriggerName(ent)
@@ -64,7 +63,11 @@ if SERVER then
 				roomTriggerPositions[roomName] = ent:GetPos() + ent:OBBCenter()
 			end
 		end
-	end)
+	end
+
+	-- Enumerate all trigger_room_bounds and collect into tables
+	hook.Add('InitPostEntity', 'au_skeld admin map init entities', collectRoomTriggers)
+	hook.Add('PostCleanupMap', 'au_skeld admin map init entities', collectRoomTriggers)
 
 	-- Clear out stale player details at start of next game
 	hook.Add('GMAU GameStart', function ()
