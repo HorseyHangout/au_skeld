@@ -59,6 +59,7 @@ if SERVER then
 
 	hook.Add('SetupPlayerVisibility', 'au_skeld cameras add PVS', function (ply, viewEnt)
 		if ply:GetCurrentVGUI() ~= 'securityCams' then return end -- player not on cams
+		if GAMEMODE:GetCommunicationsDisabled() then return end
 
 		for k, v in pairs(getCameraViewpointEnts()) do
 			AddOriginToPVS(v.pos)
@@ -84,6 +85,22 @@ else
 		'navigation',   'admin',
 		'upper_engine', 'security',
 	}
+	local noiseMat = Material('au_skeld/gui/noise.png')
+	local noiseColor = Color(189, 247, 224)
+	local colorRed = Color(255, 0, 0)
+	local noiseScrollSpeed = 100
+	local flashSpeed = 150
+
+	surface.CreateFont('au_skeld comms', {
+		font = 'Lucida Console',
+		size = ScreenScale(15),
+		weight = 400,
+		outline = true,
+	})
+
+	local function _(str)
+		return GAMEMODE.Lang.GetEntry(str)()
+	end
 
 	hook.Add('GMAU OpenVGUI', 'au_skeld cameras GUI open', function(payload)
 		if not payload.cameraData then return end
@@ -122,29 +139,49 @@ else
 
 				if curCamera then
 					function cam:Paint(w, h)
-						-- XD
-						oldHalo = halo.Render
-						halo.Render = noop
-
 						local x, y = self:LocalToScreen(0, 0)
-						render.RenderView( {
-							aspectratio = w/h,
-							origin = curCamera.pos,
-							angles = curCamera.angle,
-							x = x,
-							y = y,
-							w = w,
-							h = h,
-							fov = 125,
-							drawviewmodel = false,
-						})
+
+						local oldHalo = halo.Render
+						halo.Render = noop
+						
+						if not GAMEMODE:GetCommunicationsDisabled() then
+							render.RenderView {
+								aspectratio = w/h,
+								origin = curCamera.pos,
+								angles = curCamera.angle,
+								x = x,
+								y = y,
+								w = w,
+								h = h,
+								fov = 125,
+								drawviewmodel = false,
+							}
+						else
+							-- comms disabled, show noise and flashing text
+							surface.SetMaterial(noiseMat)
+							local time = SysTime() * noiseScrollSpeed
+							render.PushFilterMin(TEXFILTER.LINEAR)
+							render.PushFilterMag(TEXFILTER.LINEAR)
+							surface.SetDrawColor(noiseColor)
+							surface.DrawTexturedRectUV(
+								0, 0, w, h,
+								time % 1,         0,
+								(time + w/h) % 1, 1
+							)
+							render.PopFilterMag()
+							render.PopFilterMin()
+
+							if time % flashSpeed < flashSpeed/2 then
+								draw.SimpleText('[' .. string.upper(_('tasks.commsSabotaged')) .. ']', 'au_skeld comms', w/2, h/2, colorRed, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+							end
+						end
 
 						halo.Render = oldHalo
 					end
 				else
 					print('[?!?] Camera ' .. curCameraName .. ' missing from payload?')
 					function cam:Paint(w, h)
-						surface.SetDrawColor(Color(255, 0, 0))
+						surface.SetDrawColor(colorRed)
 						surface.DrawRect(0, 0, w, h)
 					end
 				end
