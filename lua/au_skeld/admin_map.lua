@@ -167,7 +167,7 @@ else
 					-- Create a crewmate sprite.
 					local crewmate = row.container:Add('AmongUsCrewmate')
 					crewmate:SetSize(blipSize, blipSize)
-					crewmate:SetColor(Color(130, 255, 0))
+					crewmate:SetColor(Color(224, 255, 0))
 
 					-- Position the crewmate icon.
 					-- Because Dock(LEFT) just doesn't work?
