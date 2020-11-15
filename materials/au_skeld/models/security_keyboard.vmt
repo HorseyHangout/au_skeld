@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/security_keyboard"
+	"$surfaceprop" "plastic"
+}
