@@ -49,7 +49,8 @@ if SERVER then
 		end)
 	end
 
-	concommand.Add('au_debug_open_cameras', openCameras)
+	-- Debugging command. Ignore.
+	-- concommand.Add('au_debug_open_cameras', openCameras)
 
 	hook.Add('PlayerUse', 'au_skeld cameras monitor use', function (ply, ent)
 		if ent:GetName() == 'camera_button' then
