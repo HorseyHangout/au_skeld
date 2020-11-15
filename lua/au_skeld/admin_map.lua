@@ -63,6 +63,8 @@ if SERVER then
 		end
 
 		-- Collect room boundaries and store for later
+		local foundRooms = 0
+
 		for _, ent in ipairs(ents.FindByClass('trigger_room_bounds')) do
 			if IsValid(ent) and string.sub(ent:GetName(), 1, string.len(ROOM_TRIGGER_NAME_PREFIX)) == ROOM_TRIGGER_NAME_PREFIX then
 				local roomName = roomTriggerName(ent)
@@ -70,7 +72,12 @@ if SERVER then
 				-- Bit of a nasty hack to have the entities network details to clients when OnTouchStart/OnTouchEnd is called
 				ent:SetCountChangeCallback(networkMapCounts)
 				roomTriggerPositions[roomName] = ent:GetPos()
+				foundRooms = foundRooms + 1
 			end
+		end
+
+		if foundRooms == 0 then
+			error('no trigger_room_bounds in level')
 		end
 	end
 
@@ -87,6 +94,27 @@ if SERVER then
 	hook.Add('PlayerUse', 'au_skeld admin map use', function (ply, ent)
 		if ent:GetName() == BUTTON_NAME then
 			openAdminMap(ply)
+		end
+	end)
+
+	hook.Add('GMAU MeetingEnd', 'au_skeld admin map cleanup counts', function ()
+		for room, ent in pairs(roomTriggers) do
+			if room == 'cafeteria' then
+				-- Count all live players, and set cafeteria's player count to that number,
+				-- since players all spawn in cafeteria
+				-- Terrible hack, I'm sorry
+				local livePlayers = 0
+				for i, v in ipairs(player.GetAll()) do
+					if IsValid(v) and not v:IsDead() then
+						livePlayers = livePlayers + 1
+					end
+				end
+				ent:SetCount(livePlayers)
+			else
+				-- For all other rooms, zero-out their count, since everyone will have been
+				-- teleported to cafeteria during hte meeting
+				ent:SetCount(0)
+			end
 		end
 	end)
 
