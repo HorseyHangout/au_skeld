@@ -1,4 +1,5 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "au_skeld/o2_floor"
+	"$surfaceprop" "tile"
 }
