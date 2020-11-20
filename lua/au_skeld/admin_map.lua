@@ -1,16 +1,18 @@
 if SERVER then
 	util.AddNetworkString('au_skeld admin map update')
 
+	local BUTTON_NAME = 'admin_map_button'
+	local ROOM_TRIGGER_NAME_PREFIX = 'admin_map_room_'
+
 	local playersOnAdminMap = {}
 	local roomTriggers = {}
-	local roomTriggerNamePrefix = 'admin_map_room_'
 	local roomTriggerPositions = {}
 
 	--- Retrieves a room's name from the trigger's targetname
-	-- @param ent The trigger_room_bounds entity with the appropriate roomTriggerNamePrefix prefix
+	-- @param ent The trigger_room_bounds entity with the appropriate ROOM_TRIGGER_NAME_PREFIX prefix
 	-- @return The name of the trigger_room_bounds entity, without the prefix
 	local function roomTriggerName(ent)
-		return string.sub(ent:GetName(), string.len(roomTriggerNamePrefix) + 1)
+		return string.sub(ent:GetName(), string.len(ROOM_TRIGGER_NAME_PREFIX) + 1)
 	end
 
 	--- Gets the number of players in each room
@@ -53,9 +55,16 @@ if SERVER then
 		end)
 	end
 
-	local function collectRoomTriggers()
+	local function setupAfterCleanup()
+		-- Set admin table button as highlightable
+		local button = ents.FindByName(BUTTON_NAME)[1]
+		if IsValid(button) then
+			GAMEMODE:SetUseHighlight(button, true)
+		end
+
+		-- Collect room boundaries and store for later
 		for _, ent in ipairs(ents.FindByClass('trigger_room_bounds')) do
-			if IsValid(ent) and string.sub(ent:GetName(), 1, string.len(roomTriggerNamePrefix)) == roomTriggerNamePrefix then
+			if IsValid(ent) and string.sub(ent:GetName(), 1, string.len(ROOM_TRIGGER_NAME_PREFIX)) == ROOM_TRIGGER_NAME_PREFIX then
 				local roomName = roomTriggerName(ent)
 				roomTriggers[roomName] = ent
 				-- Bit of a nasty hack to have the entities network details to clients when OnTouchStart/OnTouchEnd is called
@@ -65,9 +74,10 @@ if SERVER then
 		end
 	end
 
-	-- Enumerate all trigger_room_bounds and collect into tables
-	hook.Add('InitPostEntity', 'au_skeld admin map init entities', collectRoomTriggers)
-	hook.Add('PostCleanupMap', 'au_skeld admin map init entities', collectRoomTriggers)
+	-- Re-collect all room boundaries when the map starts and when cleanup is called
+	-- Also set our button as useable
+	hook.Add('InitPostEntity', 'au_skeld admin map init entities', setupAfterCleanup)
+	hook.Add('PostCleanupMap', 'au_skeld admin map init entities', setupAfterCleanup)
 
 	-- Clear out stale player details at start of next game
 	hook.Add('GMAU GameStart', function ()
@@ -75,7 +85,7 @@ if SERVER then
 	end)
 
 	hook.Add('PlayerUse', 'au_skeld admin map use', function (ply, ent)
-		if ent:GetName() == 'admin_map_button' then
+		if ent:GetName() == BUTTON_NAME then
 			openAdminMap(ply)
 		end
 	end)
@@ -84,6 +94,8 @@ if SERVER then
 	-- concommand.Add('au_debug_open_admin_map', openAdminMap)
 else
 	local MAX_ROW_SIZE = 5
+	local CREWMATE_COLOR = Color(224, 255, 0)
+	local MAP_COLOR = Color(32, 220, 32)
 
 	local map
 
@@ -108,7 +120,7 @@ else
 
 		map = vgui.Create('AmongUsMapBase')
 		map:SetupFromManifest(GAMEMODE.MapManifest)
-		map:SetColor(Color(32, 220, 32))
+		map:SetColor(MAP_COLOR)
 		function map:OnClose()
 			GAMEMODE:HUD_CloseVGUI()
 			self:Remove()
@@ -167,7 +179,7 @@ else
 					-- Create a crewmate sprite.
 					local crewmate = row.container:Add('AmongUsCrewmate')
 					crewmate:SetSize(blipSize, blipSize)
-					crewmate:SetColor(Color(224, 255, 0))
+					crewmate:SetColor(CREWMATE_COLOR)
 
 					-- Position the crewmate icon.
 					-- Because Dock(LEFT) just doesn't work?

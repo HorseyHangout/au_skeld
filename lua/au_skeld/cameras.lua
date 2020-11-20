@@ -1,14 +1,24 @@
+
 if SERVER then
+	-- Entity targetname for the button which opens cameras
+	local BUTTON_NAME = 'camera_button'
+	-- VGUI state name to use
+	local VGUI_NAME = 'securityCams'
+	-- Entity targetname for the physical camera props
+	local PROP_NAME = 'security_cam'
+	-- Prefix of the entity targetname for the invisible camera viewpoints
+	-- Not positioned exactly at the security_cam props to allow more viewpoint flexibility
+	local VIEWPOINT_NAME_PREFIX = 'camera_viewpoint_'
+
 	local playersOnCameras = {}
 
 	local function getCameraViewpointEnts()
-		local cameraPrefix = 'camera_viewpoint_'
 		local cameraData = {}
 
 		for i, v in ipairs(ents.GetAll()) do
-			if IsValid(v) and string.sub(v:GetName(), 1, string.len(cameraPrefix)) == cameraPrefix then
-				local cameraName = string.sub(v:GetName(), string.len(cameraPrefix) + 1)
-				cameraData[cameraName] = {
+			if IsValid(v) and string.sub(v:GetName(), 1, string.len(VIEWPOINT_NAME_PREFIX)) == VIEWPOINT_NAME_PREFIX then
+				local viewpointName = string.sub(v:GetName(), string.len(VIEWPOINT_NAME_PREFIX) + 1)
+				cameraData[viewpointName] = {
 					pos   = v:GetPos(),
 					angle = v:GetAngles()
 				}
@@ -19,7 +29,6 @@ if SERVER then
 	end
 
 	local function updateCameraModels()
-		local cameraName = 'security_cam'
 		local numPlayersOnCams = 0
 
 		for _, v in pairs(playersOnCameras) do
@@ -28,7 +37,7 @@ if SERVER then
 			end
 		end
 
-		for i, v in ipairs(ents.FindByName(cameraName)) do
+		for i, v in ipairs(ents.FindByName(PROP_NAME)) do
 			local skin = numPlayersOnCams > 0 and 1 or 0
 			v:SetSkin(skin)
 		end
@@ -43,7 +52,7 @@ if SERVER then
 		playersOnCameras[playerTable] = true
 		updateCameraModels()
 
-		GAMEMODE:Player_OpenVGUI(playerTable, 'securityCams', payload, function()
+		GAMEMODE:Player_OpenVGUI(playerTable, VGUI_NAME, payload, function()
 			playersOnCameras[playerTable] = false
 			updateCameraModels()
 		end)
@@ -53,13 +62,13 @@ if SERVER then
 	-- concommand.Add('au_debug_open_cameras', openCameras)
 
 	hook.Add('PlayerUse', 'au_skeld cameras monitor use', function (ply, ent)
-		if ent:GetName() == 'camera_button' then
+		if ent:GetName() == BUTTON_NAME then
 			openCameras(ply)
 		end
 	end)
 
 	hook.Add('SetupPlayerVisibility', 'au_skeld cameras add PVS', function (ply, viewEnt)
-		if ply:GetCurrentVGUI() ~= 'securityCams' then return end -- player not on cams
+		if ply:GetCurrentVGUI() ~= VGUI_NAME then return end -- player not on cams
 		if GAMEMODE:GetCommunicationsDisabled() then return end
 
 		for k, v in pairs(getCameraViewpointEnts()) do
@@ -67,19 +76,20 @@ if SERVER then
 		end
 	end)
 
-	-- TODO: Remove once UI close callback is called on player disconnection
-	hook.Add('PlayerDisconnected', 'au_skeld cameras fix player count', function (ply)
-		if not ply:IsPlaying() then return end
-		local playerTable = ply:GetAUPlayerTable()
-
-		if playersOnCameras[playerTable] then playersOnCameras[playerTable] = false end
-		updateCameraModels()
-	end)
-
 	hook.Add('GMAU GameStart', 'au_skeld cameras cleanup', function ()
 		playersOnCameras = {}
 		updateCameraModels()
 	end)
+
+	local function fixupUseHighlight()
+		local ent = ents.FindByName(BUTTON_NAME)[1]
+		if IsValid(ent) then
+			GAMEMODE:SetUseHighlight(ent, true)
+		end
+	end
+
+	hook.Add('InitPostEntity', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
+	hook.Add('PostMapCleanup', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
 else
 	local noop = function() end
 	local cameraOrder = {
