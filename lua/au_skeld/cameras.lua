@@ -89,7 +89,7 @@ if SERVER then
 	end
 
 	hook.Add('InitPostEntity', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
-	hook.Add('PostMapCleanup', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
+	hook.Add('PostCleanupMap', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
 else
 	local noop = function() end
 	local cameraOrder = {
