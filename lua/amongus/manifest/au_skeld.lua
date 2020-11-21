@@ -38,7 +38,7 @@ local MANIFEST = {
 					},
 					{
 						Text = 'area.upperEngine',
-						Position = Vector(160/1024, 110/570),
+						Position = Vector(155/1024, 110/570),
 					},
 					{
 						Text = 'area.reactor',
@@ -50,7 +50,7 @@ local MANIFEST = {
 					},
 					{
 						Text = 'area.lowerEngine',
-						Position = Vector(160/1024, 405/570),
+						Position = Vector(155/1024, 405/570),
 					},
 					{
 						Text = 'area.electrical',
@@ -64,7 +64,7 @@ local MANIFEST = {
 					},
 					{
 						Text = 'area.o2',
-						Position = Vector(725/1024, 215/570),
+						Position = Vector(725/1024, 216/570),
 					},
 					{
 						Text = 'area.navigation',
@@ -80,7 +80,7 @@ local MANIFEST = {
 					},
 					{
 						Text = 'area.communications',
-						Position = Vector(660/1024, 500/570),
+						Position = Vector(661/1024, 500/570),
 					},
 				},
 			} end
