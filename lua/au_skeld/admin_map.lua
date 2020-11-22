@@ -69,7 +69,7 @@ if SERVER then
 				roomTriggers[roomName] = ent
 				-- Bit of a nasty hack to have the entities network details to clients when OnTouchStart/OnTouchEnd is called
 				ent:SetCountChangeCallback(networkMapCounts)
-				roomTriggerPositions[roomName] = ent:GetPos() + ent:OBBCenter()
+				roomTriggerPositions[roomName] = ent:GetPos()
 			end
 		end
 	end
