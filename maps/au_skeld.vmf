@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2332"
+	"mapversion" "2334"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2332"
+	"mapversion" "2334"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -106314,6 +106314,7 @@ entity
 		"OnTaskCancel" "effect_medbay_scan_relay,CancelPending,,0,-1"
 		"OnTaskCancel" "effect_medbay_scan_field,Alpha,0,0,-1"
 		"OnTaskCancel" "effect_medbay_scan_field,SetPosition,0,0,-1"
+		"OnTaskCancel" "effect_medbay_scan_field,SetSpeed,6400,0,-1"
 	}
 	solid
 	{
@@ -116622,6 +116623,7 @@ entity
 		"OnTrigger" "effect_medbay_scan_field,Open,,0,-1"
 		"OnTrigger" "effect_medbay_scan_field,Close,,6,-1"
 		"OnTrigger" "effect_medbay_scan_field,Alpha,128,6,-1"
+		"OnTrigger" "effect_medbay_scan_field,SetSpeed,20,0,-1"
 	}
 	"origin" "-2208 1056 48"
 	editor
