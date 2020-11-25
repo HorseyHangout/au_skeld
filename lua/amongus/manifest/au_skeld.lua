@@ -6,6 +6,13 @@ include('au_skeld/cameras.lua')
 AddCSLuaFile('au_skeld/admin_map.lua')
 include('au_skeld/admin_map.lua')
 
+-- cheeky self-shoutout c:
+MsgN()
+GAMEMODE.Logger.Info("You're playing on au_skeld, brought to you by HorseyHangout")
+GAMEMODE.Logger.Info("For more info or to report an issue with the map, visit:")
+GAMEMODE.Logger.Info("https://github.com/HorseyHangout/au_skeld")
+MsgN()
+
 local MANIFEST = {
 	PrintName = 'The Skeld',
 	Map = {
