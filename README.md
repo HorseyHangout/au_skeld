@@ -7,6 +7,7 @@ The Skeld map for [NotMyWing](https://github.com/NotMyWing)'s [Among Us Garry's 
 - [Bytewave](https://github.com/BytewaveMLP)
 - [Caramel Sweet](https://github.com/CaramelSweet)
 - [NotMyWing](https://github.com/NotMyWing)
+- [Tyler Schrock](https://github.com/Tschrock)
 
 ## License
 
