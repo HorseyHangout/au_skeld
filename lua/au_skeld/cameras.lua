@@ -85,6 +85,7 @@ if SERVER then
 		local ent = ents.FindByName(BUTTON_NAME)[1]
 		if IsValid(ent) then
 			GAMEMODE:SetUseHighlight(ent, true)
+			ent:SetNWBool('au_skeld_IsCameraButton', true)
 		end
 	end
 
@@ -97,6 +98,7 @@ else
 		'upper_engine', 'security',
 	}
 	local noiseMat = Material('au_skeld/gui/noise.png')
+	local buttonMat = Material('au_skeld/gui/security_button.png')
 	local noiseColor = Color(189, 247, 224)
 	local colorRed = Color(255, 0, 0)
 	local noiseScrollSpeed = 100
@@ -112,6 +114,10 @@ else
 	local function _(str)
 		return GAMEMODE.Lang.GetEntry(str)()
 	end
+
+	hook.Add('GMAU UseButtonOverride', 'au_skeld cameras use button', function (ent)
+		if ent:GetNWBool('au_skeld_IsCameraButton') then return buttonMat end
+	end)
 
 	hook.Add('GMAU OpenVGUI', 'au_skeld cameras GUI open', function(payload)
 		if not payload.cameraData then return end
