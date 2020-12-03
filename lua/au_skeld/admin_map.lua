@@ -87,7 +87,7 @@ if SERVER then
 	hook.Add('PostCleanupMap', 'au_skeld admin map init entities', setupAfterCleanup)
 
 	-- Clear out stale player details at start of next game
-	hook.Add('GMAU GameStart', function ()
+	hook.Add('GMAU GameStart', 'au_skeld admin map clear entries', function ()
 		playersOnAdminMap = {}
 	end)
 
