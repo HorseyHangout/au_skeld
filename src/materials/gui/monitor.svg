@@ -7,58 +7,66 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1024"
-   height="732"
-   viewBox="0 0 1024 732"
-   version="1.1"
+   inkscape:export-ydpi="95.974701"
+   inkscape:export-xdpi="95.974701"
+   inkscape:export-filename="C:\Users\Bytewave\Documents\GMod Maps\au_skeld\materials\au_skeld\gui\cameras_monitor.png"
+   sodipodi:docname="monitor.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
-   inkscape:version="1.0.1 (1.0.1+r74)"
-   sodipodi:docname="monitor.svg">
+   version="1.1"
+   viewBox="0 0 1024 732"
+   height="732"
+   width="1024">
   <defs
      id="defs2">
     <inkscape:path-effect
-       effect="powerclip"
-       id="path-effect2722"
-       is_visible="true"
-       lpeversion="1"
-       inverse="true"
-       flatten="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths."
        hide_clip="false"
-       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+       flatten="false"
+       inverse="true"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect2722"
+       effect="powerclip" />
     <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2718">
+       id="clipPath2718"
+       clipPathUnits="userSpaceOnUse">
       <rect
-         id="rect2720"
-         width="911"
-         height="627"
-         x="56.5"
-         y="50.5"
+         style="display:none;fill:#c3f9e7;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          ry="12"
-         style="display:none;fill:#c3f9e7;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+         y="50.5"
+         x="56.5"
+         height="627"
+         width="911"
+         id="rect2720" />
       <path
-         id="lpe_path-effect2722"
-         style="fill:#c3f9e7;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         d="M -2,-2 H 1026 V 734 H -2 Z m 70.5,52.5 c -6.648,0 -12,5.352 -12,12 v 603 c 0,6.648 5.352,12 12,12 h 887 c 6.648,0 12,-5.352 12,-12 v -603 c 0,-6.648 -5.352,-12 -12,-12 z"
          class="powerclip"
-         d="M -2,-2 H 1026 V 734 H -2 Z m 70.5,52.5 c -6.648,0 -12,5.352 -12,12 v 603 c 0,6.648 5.352,12 12,12 h 887 c 6.648,0 12,-5.352 12,-12 v -603 c 0,-6.648 -5.352,-12 -12,-12 z" />
+         style="fill:#c3f9e7;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="lpe_path-effect2722" />
     </clipPath>
   </defs>
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="531.09869"
-     inkscape:cy="356.8446"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1361"
+     inkscape:window-width="2560"
+     inkscape:snap-global="false"
      units="px"
-     inkscape:snap-global="false" />
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="356.8446"
+     inkscape:cx="531.09869"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -72,51 +80,51 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     id="layer1"
      inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:label="Layer 1">
     <g
-       id="g2716"
+       inkscape:path-effect="#path-effect2722"
        clip-path="url(#clipPath2718)"
-       inkscape:path-effect="#path-effect2722">
+       id="g2716">
       <path
-         style="fill:#263839;stroke:#15161b;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
-         id="rect2687"
-         width="1004"
-         height="712"
-         x="10"
-         y="10"
-         ry="12"
+         sodipodi:type="rect"
          d="m 22,10 h 980 c 6.648,0 12,5.352 12,12 v 688 c 0,6.648 -5.352,12 -12,12 H 22 c -6.648,0 -12,-5.352 -12,-12 V 22 c 0,-6.648 5.352,-12 12,-12 z"
-         sodipodi:type="rect" />
-      <path
-         style="fill:#425152;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
-         id="rect2685"
-         width="954"
-         height="678"
-         x="35"
-         y="27"
          ry="12"
+         y="10"
+         x="10"
+         height="712"
+         width="1004"
+         id="rect2687"
+         style="fill:#263839;stroke:#15161b;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000" />
+      <path
+         sodipodi:type="rect"
          d="m 47,27 h 930 c 6.648,0 12,5.352 12,12 v 654 c 0,6.648 -5.352,12 -12,12 H 47 c -6.648,0 -12,-5.352 -12,-12 V 39 c 0,-6.648 5.352,-12 12,-12 z"
-         sodipodi:type="rect" />
-      <path
-         style="fill:#607b76;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000"
-         id="rect2683"
-         width="934"
-         height="656"
-         x="45"
-         y="38"
          ry="12"
+         y="27"
+         x="35"
+         height="678"
+         width="954"
+         id="rect2685"
+         style="fill:#425152;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000" />
+      <path
+         sodipodi:type="rect"
          d="m 57,38 h 910 c 6.648,0 12,5.352 12,12 v 632 c 0,6.648 -5.352,12 -12,12 H 57 c -6.648,0 -12,-5.352 -12,-12 V 50 c 0,-6.648 5.352,-12 12,-12 z"
-         sodipodi:type="rect" />
+         ry="12"
+         y="38"
+         x="45"
+         height="656"
+         width="934"
+         id="rect2683"
+         style="fill:#607b76;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stop-color:#000000" />
     </g>
     <rect
-       id="rect2673"
-       width="911"
-       height="627"
-       x="56.5"
-       y="50.5"
+       style="fill:none;stroke:#424d4a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
        ry="12"
-       style="fill:none;stroke:#424d4a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+       y="50.5"
+       x="56.5"
+       height="627"
+       width="911"
+       id="rect2673" />
   </g>
 </svg>

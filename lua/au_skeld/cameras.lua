@@ -98,7 +98,10 @@ else
 		'upper_engine', 'security',
 	}
 	local noiseMat = Material('au_skeld/gui/noise.png')
-	local buttonMat = Material('au_skeld/gui/security_button.png')
+	local buttonMat = Material('au_skeld/gui/security_button.png', 'smooth')
+	local bgMat = Material('au_skeld/gui/cameras_background.png', 'smooth')
+	local monitorMat = Material('au_skeld/gui/cameras_monitor.png', 'smooth')
+	local gradientMat = Material('au_skeld/gui/gradient.png', 'smooth')
 	local noiseColor = Color(189, 247, 224)
 	local colorRed = Color(255, 0, 0)
 	local noiseScrollSpeed = 100
@@ -123,27 +126,73 @@ else
 		if not payload.cameraData then return end
 
 		local base = vgui.Create('AmongUsVGUIBase')
-		local panel = vgui.Create('DPanel')
-		local width = 0.55 * ScrW()
-		local height = 0.7 * ScrH()
-		local margin = math.min(width, height) * 0.03
+
+		local bgWidth, bgHeight = GAMEMODE.Render.FitMaterial(bgMat, ScrW(), ScrH())
+		local bgAspectRatio = bgWidth/bgHeight
+		local bgDrawWidth = bgAspectRatio * ScrH()
+
+		local animationTable, value
+
+		function base:Paint(w, h)
+			if not value or not animationTable then return end
+			if not animationTable.closing and value < 0.5 then return end
+			if animationTable.closing and value > 0.5 then return end
+
+			surface.SetMaterial(bgMat)
+			surface.SetDrawColor(255, 255, 255)
+			surface.DrawTexturedRect(w/2-bgDrawWidth/2, 0, bgDrawWidth, h)
+			if not animationTable.closing and value > 0.5 then
+				surface.SetDrawColor(255, 255, 255, 255)
+				surface.SetMaterial(gradientMat)
+				surface.DrawTexturedRect(0, 0, w * 0.5, h)
+				surface.DrawTexturedRectUV(w * 0.5, 0, w * 0.5, h, 1, 0, 0, 1)
+			end
+		end
+
+		function base:PaintOver(w, h)
+			if not animationTable then return end
+
+			value = (animationTable.EndTime - SysTime()) / (animationTable.EndTime - animationTable.StartTime)
+			value = math.min(1-value, 1)
+
+			if value < 0.5 then
+				-- fade out
+				surface.SetDrawColor(0, 0, 0, value * 2 * 255)
+			else
+				-- fade in
+				surface.SetDrawColor(0, 0, 0, (1-value) * 2 * 255)
+			end
+
+			surface.DrawRect(0, 0, w, h)
+		end
+
+		local panel = vgui.Create('Panel')
+		local minDim = 0.98 * math.min(ScrW(), ScrH())
+		local width, height = GAMEMODE.Render.FitMaterial(monitorMat, minDim, minDim)
+		local margin = math.min(width, height) * 0.02
 		panel:SetSize(width, height)
-		panel:SetBackgroundColor(Color(64, 64, 64))
+		function panel:Paint(w, h)
+			surface.SetDrawColor(noiseColor)
+			surface.DrawRect(margin/2, margin/2, w-margin, h-margin)
+		end
+		function panel:PaintOver(w, h)
+			surface.SetMaterial(monitorMat)
+			surface.SetDrawColor(255, 255, 255)
+			surface.DrawTexturedRect(0, 0, w, h)
+		end
 
 		for i = 0, 1 do
-			local row = panel:Add('DPanel')
+			local row = panel:Add('Panel')
 			row:SetTall(height/2)
 			row:Dock(TOP)
-			row.Paint = function() end
 
 			for j = 1, 2 do
 				local curCameraName = cameraOrder[(i * 2) + j]
 				local curCamera = payload.cameraData[curCameraName]
 
-				local camContainer = row:Add('DPanel')
+				local camContainer = row:Add('Panel')
 				camContainer:SetWide(width/2)
 				camContainer:Dock(LEFT)
-				camContainer.Paint = function() end
 
 				local cam = camContainer:Add('DPanel')
 				cam:DockMargin(
@@ -206,6 +255,56 @@ else
 		end
 
 		base:Setup(panel)
+
+		function base:Popup()
+			self:MakePopup()
+			self:SetKeyboardInputEnabled(false)
+			self:SetVisible(true)
+			self:SetAlpha(255)
+			panel:Hide()
+			self:NewAnimation(0.25, 0, 0, function()
+				panel:Show()
+			end)
+			self:SetPos(0, 0)
+			self.__isOpened = true
+
+			animationTable = self:NewAnimation(0.5, 0, 0, function ()
+				if self.OnOpen then
+					self:OnOpen()
+				end
+			end)
+
+			animationTable.closing = false
+
+			return true
+		end
+
+		function base:Close()
+			self:NewAnimation(0.25, 0, 0, function()
+				panel:Hide()
+				self:SetMouseInputEnabled(false)
+				self:GetCloseButton():Hide()
+			end)
+			self.__isOpened = false
+
+			animationTable = self:NewAnimation(0.5, 0, 0, function ()
+				if self.OnClose then
+					self:OnClose()
+				end
+	
+				if self:GetDeleteOnClose() then
+					self:Remove()
+				else
+					self:SetVisible(false)
+				end
+			end)
+
+			animationTable.closing = true
+	
+			return true
+		end
+
+		panel:AlignTop(ScrH()*0.03)
 		base:Popup()
 
 		GAMEMODE:HUD_OpenVGUI(base)
