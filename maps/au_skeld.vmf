@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2463"
+	"mapversion" "2465"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2463"
+	"mapversion" "2465"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -92069,7 +92069,7 @@ entity
 			"id" "59086"
 			"plane" "(-2390 342 0) (-2452 342 0) (-2452 342 96)"
 			"material" "AU_SKELD/DOOR"
-			"uaxis" "[1 0 0 216] 0.25"
+			"uaxis" "[1 0 0 88] 0.25"
 			"vaxis" "[0 0 -1 -64] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
