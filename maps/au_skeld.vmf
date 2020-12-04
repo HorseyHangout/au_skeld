@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2454"
+	"mapversion" "2461"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2454"
+	"mapversion" "2461"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -83758,7 +83758,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2234 1498 72"
 	editor
 	{
@@ -83844,7 +83844,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2274 1498 72"
 	editor
 	{
@@ -83930,7 +83930,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2470 1498 72"
 	editor
 	{
@@ -84016,7 +84016,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2430 1498 72"
 	editor
 	{
@@ -84102,7 +84102,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2658 1498 72"
 	editor
 	{
@@ -84188,7 +84188,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2618 1498 72"
 	editor
 	{
@@ -84274,7 +84274,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2234 1610 72"
 	editor
 	{
@@ -84360,7 +84360,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2274 1610 72"
 	editor
 	{
@@ -84446,7 +84446,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2470 1610 72"
 	editor
 	{
@@ -84532,7 +84532,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2618 1610 72"
 	editor
 	{
@@ -84618,7 +84618,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2658 1610 72"
 	editor
 	{
@@ -84704,7 +84704,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2430 1610 72"
 	editor
 	{
@@ -84790,7 +84790,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 1324 72"
 	editor
 	{
@@ -84876,7 +84876,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 1284 72"
 	editor
 	{
@@ -84962,7 +84962,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 1324 72"
 	editor
 	{
@@ -85048,7 +85048,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 1284 72"
 	editor
 	{
@@ -85134,7 +85134,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-762 1118 72"
 	editor
 	{
@@ -85220,7 +85220,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-722 1230 72"
 	editor
 	{
@@ -85306,7 +85306,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-562 1230 72"
 	editor
 	{
@@ -85392,7 +85392,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-522 1106 72"
 	editor
 	{
@@ -85478,7 +85478,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-362 1106 72"
 	editor
 	{
@@ -85564,7 +85564,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-362 994 72"
 	editor
 	{
@@ -85650,7 +85650,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-522 994 72"
 	editor
 	{
@@ -85736,7 +85736,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-562 854 72"
 	editor
 	{
@@ -85822,7 +85822,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-722 854 72"
 	editor
 	{
@@ -85908,7 +85908,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-722 966 72"
 	editor
 	{
@@ -85994,7 +85994,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-762 966 72"
 	editor
 	{
@@ -86080,7 +86080,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-858 966 72"
 	editor
 	{
@@ -86166,7 +86166,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 758 72"
 	editor
 	{
@@ -86252,7 +86252,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 718 72"
 	editor
 	{
@@ -86338,7 +86338,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 718 72"
 	editor
 	{
@@ -86424,7 +86424,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 758 72"
 	editor
 	{
@@ -86510,7 +86510,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1234 493.999 72"
 	editor
 	{
@@ -86596,7 +86596,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1274 493.999 72"
 	editor
 	{
@@ -86682,7 +86682,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1274 382 72"
 	editor
 	{
@@ -86768,7 +86768,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1240 382 72"
 	editor
 	{
@@ -86854,7 +86854,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2266 210 72"
 	editor
 	{
@@ -86940,7 +86940,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2226 210 72"
 	editor
 	{
@@ -87026,7 +87026,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2266 322 72"
 	editor
 	{
@@ -87112,7 +87112,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2226 322 72"
 	editor
 	{
@@ -87198,7 +87198,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2518 322 72"
 	editor
 	{
@@ -87284,7 +87284,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2478 322 72"
 	editor
 	{
@@ -87370,7 +87370,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2478 210 72"
 	editor
 	{
@@ -87456,7 +87456,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2518 210 72"
 	editor
 	{
@@ -87542,7 +87542,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2694 430 72"
 	editor
 	{
@@ -87628,7 +87628,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2694 542 72"
 	editor
 	{
@@ -87714,7 +87714,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2654 542 72"
 	editor
 	{
@@ -87800,7 +87800,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1566 930 72"
 	editor
 	{
@@ -87886,7 +87886,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1458 930 72"
 	editor
 	{
@@ -87972,7 +87972,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1458 818 72"
 	editor
 	{
@@ -88058,7 +88058,7 @@ entity
 	"model" "models/au_skeld/hallway_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1566 818 72"
 	editor
 	{
@@ -88988,7 +88988,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 1304 48"
 	editor
 	{
@@ -89016,7 +89016,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 1304 48"
 	editor
 	{
@@ -89044,7 +89044,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-742 1118 48"
 	editor
 	{
@@ -89072,7 +89072,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-742 1230 48"
 	editor
 	{
@@ -89100,7 +89100,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-542 994 48"
 	editor
 	{
@@ -89128,7 +89128,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-542 1106 48"
 	editor
 	{
@@ -89156,7 +89156,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-342 994 48"
 	editor
 	{
@@ -89184,7 +89184,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-342 1106 48"
 	editor
 	{
@@ -89212,7 +89212,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-742 854 48"
 	editor
 	{
@@ -89240,7 +89240,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-742 966 48"
 	editor
 	{
@@ -89268,7 +89268,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-866 738 48"
 	editor
 	{
@@ -89296,7 +89296,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-754 738 48"
 	editor
 	{
@@ -89324,7 +89324,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1254 382 48"
 	editor
 	{
@@ -89352,7 +89352,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1254 494 48"
 	editor
 	{
@@ -89380,7 +89380,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2246 210 48"
 	editor
 	{
@@ -89408,7 +89408,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2246 322 48"
 	editor
 	{
@@ -89436,7 +89436,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2498 210 48"
 	editor
 	{
@@ -89464,7 +89464,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2498 322 48"
 	editor
 	{
@@ -89492,7 +89492,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2674 430 48"
 	editor
 	{
@@ -89520,7 +89520,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2674 542 48"
 	editor
 	{
@@ -89548,7 +89548,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2638 1498 48"
 	editor
 	{
@@ -89576,7 +89576,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2638 1610 48"
 	editor
 	{
@@ -89604,7 +89604,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2450 1498 48"
 	editor
 	{
@@ -89632,7 +89632,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2450 1610 48"
 	editor
 	{
@@ -89660,7 +89660,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2254 1498 48"
 	editor
 	{
@@ -89688,7 +89688,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-2254 1610 48"
 	editor
 	{
@@ -89716,7 +89716,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1586 818 48"
 	editor
 	{
@@ -89744,7 +89744,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1586 930 48"
 	editor
 	{
@@ -89772,7 +89772,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1438 818 48"
 	editor
 	{
@@ -89800,7 +89800,7 @@ entity
 	"model" "models/au_skeld/hallway_divider.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"origin" "-1438 930 48"
 	editor
 	{
@@ -111929,20 +111929,6 @@ entity
 }
 entity
 {
-	"id" "115989"
-	"classname" "env_cubemap"
-	"cubemapsize" "0"
-	"origin" "-742 910 48"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
 	"id" "122618"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
@@ -111962,20 +111948,6 @@ entity
 	"cubemapsize" "9"
 	"sides" "1678 1667"
 	"origin" "-2364 1448 48"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "123172"
-	"classname" "env_cubemap"
-	"cubemapsize" "9"
-	"origin" "-2638 1554 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -112027,7 +111999,6 @@ entity
 	"id" "126874"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
 	"origin" "-2350 1554 48"
 	editor
 	{
@@ -112101,7 +112072,6 @@ entity
 	"id" "126898"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
 	"origin" "-812 1174 48"
 	editor
 	{
@@ -112116,8 +112086,7 @@ entity
 	"id" "126901"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
-	"origin" "-616 1174 48"
+	"origin" "-656 1179 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -112146,7 +112115,6 @@ entity
 	"id" "126907"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
 	"origin" "-442 1050 48"
 	editor
 	{
@@ -112161,8 +112129,7 @@ entity
 	"id" "126910"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
-	"origin" "-616 910 48"
+	"origin" "-676 910 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -112176,8 +112143,7 @@ entity
 	"id" "126913"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
-	"origin" "-804 910 48"
+	"origin" "-808 849 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -112191,8 +112157,7 @@ entity
 	"id" "126916"
 	"classname" "env_cubemap"
 	"cubemapsize" "9"
-	"sides" ""
-	"origin" "-810 738 48"
+	"origin" "-809 676 48"
 	editor
 	{
 		"color" "0 0 255"
@@ -114024,7 +113989,7 @@ entity
 	"rendermode" "0"
 	"SetBodyGroup" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"StartDisabled" "0"
 	"targetname" "security_cam"
 	"origin" "-2188 1616 81"
@@ -114106,7 +114071,7 @@ entity
 	"rendermode" "0"
 	"SetBodyGroup" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"StartDisabled" "0"
 	"targetname" "security_cam"
 	"origin" "-1537 936 81"
@@ -114147,7 +114112,7 @@ entity
 	"rendermode" "0"
 	"SetBodyGroup" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"StartDisabled" "0"
 	"targetname" "security_cam"
 	"origin" "-483 1112 81"
@@ -114280,7 +114245,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.security"
 	"viewangle" "0 135 0"
 	connections
@@ -114345,7 +114310,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.electrical"
 	"viewangle" "0 345 0"
 	connections
@@ -114385,7 +114350,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.lowerEngine"
 	"viewangle" "0 135 0"
 	connections
@@ -114424,7 +114389,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.reactorSouth"
 	"viewangle" "0 90 0"
 	connections
@@ -114463,7 +114428,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.reactor"
 	"viewangle" "0 315 0"
 	connections
@@ -114502,7 +114467,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.upperEngine"
 	"viewangle" "0 225 0"
 	connections
@@ -114541,7 +114506,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.medbay"
 	"viewangle" "0 30 0"
 	connections
@@ -114621,7 +114586,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.navHallway"
 	"viewangle" "0 315 0"
 	connections
@@ -114661,7 +114626,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.admin"
 	"viewangle" "0 45 0"
 	connections
@@ -114701,7 +114666,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.shields"
 	"viewangle" "0 100 0"
 	connections
@@ -114740,7 +114705,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.weapons"
 	"viewangle" "0 270 0"
 	connections
@@ -114779,7 +114744,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.navigationSouth"
 	"viewangle" "0 60 0"
 	connections
@@ -114818,7 +114783,7 @@ entity
 	"rendermode" "0"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "6"
+	"solid" "0"
 	"targetname" "vent.navigation"
 	"viewangle" "0 300 0"
 	connections
@@ -119103,6 +119068,48 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "198121"
+	"classname" "env_cubemap"
+	"cubemapsize" "9"
+	"origin" "-2367 1186 48"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "198130"
+	"classname" "env_cubemap"
+	"cubemapsize" "9"
+	"origin" "-1220 798 48"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "198166"
+	"classname" "env_cubemap"
+	"cubemapsize" "9"
+	"origin" "-176 1050 48"
+	editor
+	{
+		"color" "0 0 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
