@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2465"
+	"mapversion" "2467"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2465"
+	"mapversion" "2467"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -109746,7 +109746,7 @@ entity
 		{
 			"id" "53677"
 			"plane" "(-1149.29 1201.31 32) (-1171.92 1178.68 32) (-1171.92 1178.68 64)"
-			"material" "VGUI/ACHIEVEMENTS/EP2_KILL_CHOPPER_NOMISSES"
+			"material" "VGUI/ACHIEVEMENTS/HL2_MAKEABASKET"
 			"uaxis" "[0.707107 0.707107 0 -9.56201] 0.5"
 			"vaxis" "[0 0 -1 0] 0.5"
 			"rotation" "0"
@@ -110179,7 +110179,7 @@ entity
 		{
 			"id" "53786"
 			"plane" "(-3127 1436 32) (-3127 1404 32) (-3127 1404 64)"
-			"material" "VGUI/ACHIEVEMENTS/EP2_BEAT_GAME"
+			"material" "VGUI/ACHIEVEMENTS/HL2_KILL_BARNACLESWITHBARREL"
 			"uaxis" "[0 1 0 8] 0.5"
 			"vaxis" "[0 0 -1 0] 0.5"
 			"rotation" "0"
@@ -110277,7 +110277,7 @@ entity
 		{
 			"id" "53834"
 			"plane" "(-3127 424 32) (-3127 392 32) (-3127 392 64)"
-			"material" "VGUI/ACHIEVEMENTS/EP2_BEAT_GAME"
+			"material" "VGUI/ACHIEVEMENTS/HL2_KILL_BARNACLESWITHBARREL"
 			"uaxis" "[0 1 0 52] 0.5"
 			"vaxis" "[0 0 -1 0] 0.5"
 			"rotation" "0"
@@ -113468,7 +113468,7 @@ entity
 		{
 			"id" "58404"
 			"plane" "(-1232 9 64) (-1264 9 64) (-1264 9 32)"
-			"material" "VGUI/ACHIEVEMENTS/EP2_BREAK_ALLWEBS"
+			"material" "VGUI/ACHIEVEMENTS/HL2_BEAT_PLAZASTANDOFF"
 			"uaxis" "[-1 0 0 -32] 0.5"
 			"vaxis" "[0 0 -1 0] 0.5"
 			"rotation" "0"
