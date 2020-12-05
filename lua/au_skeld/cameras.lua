@@ -49,8 +49,10 @@ if SERVER then
 
 		local payload = { cameraData = getCameraViewpointEnts() }
 		
-		playersOnCameras[playerTable] = true
-		updateCameraModels()
+		if IsValid(ply) and not ply:IsDead() then
+			playersOnCameras[playerTable] = true
+			updateCameraModels()
+		end
 
 		GAMEMODE:Player_OpenVGUI(playerTable, VGUI_NAME, payload, function()
 			playersOnCameras[playerTable] = false
