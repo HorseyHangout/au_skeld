@@ -1,0 +1,24 @@
+{
+    "title": "au_skeld",
+    "type": "map",
+    "tags": [
+        "cartoon",
+        "fun"
+    ],
+    "ignore": [
+        ".git/*",
+        ".git*",
+		"*.vmf",
+		"*.log",
+		"*.prt",
+		"*.lin",
+		"*.vmx",
+		"src/*",
+		"scripts/*",
+		"particles/*",
+		"*.fgd",
+		"LICENSE",
+		"README.md",
+		"addon.txt"
+    ]
+}
