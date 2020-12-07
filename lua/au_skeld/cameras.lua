@@ -109,6 +109,12 @@ else
 	local noiseScrollSpeed = 100
 	local flashSpeed = 150
 
+	local inRenderView = false
+
+	hook.Add('GMAU Lights ShouldFade', 'au_skeld cameras disable light fade', function ()
+		if inRenderView then return false end
+	end)
+
 	surface.CreateFont('au_skeld comms', {
 		font = 'Lucida Console',
 		size = ScreenScale(15),
@@ -213,6 +219,7 @@ else
 						halo.Render = noop
 						
 						if not GAMEMODE:GetCommunicationsDisabled() then
+							inRenderView = true
 							render.RenderView {
 								aspectratio = w/h,
 								origin = curCamera.pos,
@@ -224,6 +231,7 @@ else
 								fov = 125,
 								drawviewmodel = false,
 							}
+							inRenderView = false
 						else
 							-- comms disabled, show noise and flashing text
 							surface.SetMaterial(noiseMat)
