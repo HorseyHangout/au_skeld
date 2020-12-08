@@ -4,6 +4,7 @@
 
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/2309035423?logo=steam)
 ![Steam Favorites](https://img.shields.io/steam/favorites/2309035423?logo=steam)
+![Steam Update Date](https://img.shields.io/steam/update-date/2309035423?label=last%20updated&logo=steam)
 
 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2309035423)
 
