@@ -4,6 +4,7 @@ $surfaceprop metal
 $cdmaterials "au_skeld/models"
 $staticprop
 $scale 1
+$opaque
 
 $sequence idle "security_chair_back"
 

@@ -4,6 +4,7 @@ $surfaceprop concrete
 $cdmaterials "au_skeld/models"
 $staticprop
 $scale 1
+$opaque
 
 $sequence idle "weapons_floor"
 

@@ -4,6 +4,7 @@ $surfaceprop papercup
 $cdmaterials "au_skeld/models"
 $staticprop
 $scale 1
+$opaque
 
 $sequence idle "cafeteria_cup"
 

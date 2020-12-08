@@ -4,6 +4,7 @@ $surfaceprop glass
 $cdmaterials "au_skeld/models"
 $staticprop
 $scale 1
+$mostlyopaque
 
 $sequence idle "emergency_button"
 
