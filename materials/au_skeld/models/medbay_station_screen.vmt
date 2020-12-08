@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/medbay_station_screen"
+	"$selfillum" "1"
+}
