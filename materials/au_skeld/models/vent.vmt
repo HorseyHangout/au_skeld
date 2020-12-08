@@ -1,7 +1,6 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "au_skeld/models/vent"
-	"$surfaceprop" "metalpanel"
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[0.2 0.2 0.2]"
 }

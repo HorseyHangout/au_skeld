@@ -1,7 +1,6 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "au_skeld/models/hallway_divider"
-	"$surfaceprop" "metal"
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[0.25 0.25 0.25]"
 }

@@ -1,5 +1,4 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "au_skeld/models/cafeteria_cup"
-	"$surfaceprop" "papercup"
 }
