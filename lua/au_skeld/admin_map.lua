@@ -260,6 +260,12 @@ else
 						row.container:SetTall(blipSize)
 						row.container.Paint = function() end
 
+						-- Have to keep track of the children separately, because apparently :Remove()ing a child
+						-- doesn't update the number of children on this frame, even if :InvalidateLayout(true) is called.
+						-- I don't know what I'm doing, but this works. It's terrible, but it works.
+						-- Man, fuck UI code.
+						row.__numChildren = 0
+
 						table.insert(rows, row)
 					end
 
@@ -267,6 +273,7 @@ else
 					local crewmate = row.container:Add('AmongUsCrewmate')
 					crewmate:SetSize(blipSize, blipSize)
 					crewmate:SetColor(CREWMATE_COLOR)
+					row.__numChildren = row.__numChildren + 1
 
 					-- Position the crewmate icon.
 					-- Because Dock(LEFT) just doesn't work?
@@ -291,8 +298,7 @@ else
 
 					count = count - 1
 
-					local children = row.container:GetChildren()
-					if #children == 1 then
+					if row.__numChildren == 1 then
 						row:Remove()
 						blip:NewAnimation(0, 0, 0, function()
 							blip:SizeToChildren(true, true)
@@ -300,9 +306,10 @@ else
 
 						table.remove(rows, #rows)
 					else
-						children[#children]:Remove()
+						row.container:GetChildren()[row.__numChildren]:Remove()
+						row.__numChildren = row.__numChildren - 1
 
-						row.container:SetWide(blipSize * (#children - 1))
+						row.container:SetWide(blipSize * (row.__numChildren))
 
 						-- Put the container in the middle of the row.
 						blip:SetSize(MAX_ROW_SIZE * blipSize, #rows * blipSize)
