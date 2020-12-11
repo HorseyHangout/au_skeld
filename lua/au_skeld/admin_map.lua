@@ -25,8 +25,10 @@ if SERVER then
 		return roomPlayerCounts
 	end
 
+	local shouldNetworkMapCounts = true
+
 	--- Networks the number of players in each room to all players who are on the admin map
-	local function networkMapCounts(dontSend, forceSend)
+	local function networkMapCounts()
 		-- Converts the Player = bool mapping of playersOnAdminMap to a flat list of players
 		local playersToSendTo = {}
 		for ply, onMap in pairs(playersOnAdminMap) do
@@ -35,9 +37,10 @@ if SERVER then
 			end
 		end
 
+		if #playersToSendTo == 0 then return end -- Send nothing if we can
 
 		local roomPlayerCounts = {}
-		if (GAMEMODE:GetCommunicationsDisabled() or dontSend) and not forceSend then
+		if not shouldNetworkMapCounts then
 			-- don't send updates if comms are disabled
 			roomPlayerCounts = {}
 			for name, _ in pairs(roomTriggers) do
@@ -47,8 +50,6 @@ if SERVER then
 			roomPlayerCounts = getRoomPlayerCounts()
 		end
 
-		if #playersToSendTo == 0 then return end -- Send nothing if we can
-
 		net.Start('au_skeld admin map update')
 			net.WriteTable(roomPlayerCounts)
 		net.Send(playersToSendTo)
@@ -56,12 +57,14 @@ if SERVER then
 
 	hook.Add('GMAU SabotageStart', 'au_skeld admin map comms sabotage', function (sabotage)
 		if sabotage:GetHandler() ~= 'comms' then return end
-		networkMapCounts(true)
+		shouldNetworkMapCounts = false
+		networkMapCounts()
 	end)
 
 	hook.Add('GMAU SabotageEnd', 'au_skeld admin maps comms sabotage', function (sabotage)
 		if sabotage:GetHandler() ~= 'comms' then return end
-		networkMapCounts(false, true)
+		shouldNetworkMapCounts = true
+		networkMapCounts()
 	end)
 
 	local function openAdminMap(ply)
