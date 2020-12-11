@@ -26,13 +26,20 @@ if SERVER then
 	end
 
 	--- Networks the number of players in each room to all players who are on the admin map
-	local function networkMapCounts()
+	local function networkMapCounts(dontSend, forceSend)
 		-- Converts the Player = bool mapping of playersOnAdminMap to a flat list of players
 		local playersToSendTo = {}
 		for ply, onMap in pairs(playersOnAdminMap) do
 			if onMap then
 				table.insert(playersToSendTo, ply)
 			end
+		end
+
+		if (GAMEMODE:GetCommunicationsDisabled() or dontSend) and not forceSend then
+			net.Start('au_skeld admin map update')
+				net.WriteTable({})
+			net.Send(playersToSendTo)
+			return
 		end
 
 		local roomPlayerCounts = getRoomPlayerCounts()
@@ -44,8 +51,18 @@ if SERVER then
 		net.Send(playersToSendTo)
 	end
 
+	hook.Add('GMAU SabotageStart', 'au_skeld admin map comms sabotage', function (sabotage)
+		if sabotage:GetHandler() ~= 'comms' then return end
+		networkMapCounts(true)
+	end)
+
+	hook.Add('GMAU SabotageEnd', 'au_skeld admin maps comms sabotage', function (sabotage)
+		if sabotage:GetHandler() ~= 'comms' then return end
+		networkMapCounts(false, true)
+	end)
+
 	local function openAdminMap(ply)
-		local payload = { adminMap = getRoomPlayerCounts(), positions = roomTriggerPositions }
+		local payload = { adminMap = GAMEMODE:GetCommunicationsDisabled() and {} or getRoomPlayerCounts(), positions = roomTriggerPositions }
 		-- Mark player as in the map UI
 		-- Not necessary, but a bit faster than checking all players to see what UI they're on
 		playersOnAdminMap[ply] = true
@@ -124,6 +141,20 @@ else
 	local MAX_ROW_SIZE = 5
 	local CREWMATE_COLOR = Color(224, 255, 0)
 	local MAP_COLOR = Color(32, 220, 32)
+	local SABOTAGED_MAP_COLOR = Color(128, 128, 128)
+	local COLOR_RED = Color(255, 0, 0)
+	local COLOR_BLACK = Color(0, 0, 0, 160)
+	local FLASH_SPEED = 200
+
+	surface.CreateFont('au_skeld AdminMapSabotaged', {
+		font = 'Lucida Console',
+		size = ScreenScale(40),
+		weight = 400,
+	})
+
+	local function _(str)
+		return GAMEMODE.Lang.GetEntry(str)()
+	end
 
 	local map
 
@@ -143,15 +174,37 @@ else
 		end
 	end)
 
+	hook.Add('GMAU SabotageStart', 'au_skeld admin map comms sabotage', function (sabotage)
+		if sabotage:GetHandler() ~= 'comms' then return end
+		if not IsValid(map) then return end
+
+		map:SetColor(SABOTAGED_MAP_COLOR)
+	end)
+
+	hook.Add('GMAU SabotageEnd', 'au_skeld admin map comms sabotage', function (sabotage)
+		if sabotage:GetHandler() ~= 'comms' then return end
+		if not IsValid(map) then return end
+
+		map:SetColor(SABOTAGED_MAP_COLOR)
+	end)
+
 	hook.Add('GMAU OpenVGUI', 'au_skeld admin map open', function (payload)
 		if not payload.adminMap then return end
 
 		map = vgui.Create('AmongUsMapBase')
 		map:SetupFromManifest(GAMEMODE.MapManifest)
-		map:SetColor(MAP_COLOR)
+		map:SetColor(GAMEMODE:GetCommunicationsDisabled() and SABOTAGED_MAP_COLOR or MAP_COLOR)
 		function map:OnClose()
 			GAMEMODE:HUD_CloseVGUI()
 			self:Remove()
+		end
+
+		function map:PaintOver(w, h)
+			if not GAMEMODE:GetCommunicationsDisabled() then return end
+
+			if SysTime() * 100 % FLASH_SPEED < FLASH_SPEED/2 then
+				draw.SimpleTextOutlined('[' .. string.upper(_('tasks.commsSabotaged')) .. ']', 'au_skeld AdminMapSabotaged', w/2, h/2, COLOR_RED, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 6, COLOR_BLACK)
+			end
 		end
 
 		map.Blips = {}
