@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2751"
+	"mapversion" "2757"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2751"
+	"mapversion" "2757"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -106030,11 +106030,12 @@ entity
 	"taskname" "primeShields"
 	connections
 	{
-		"OnTaskComplete" "effect_shields_light,TurnOn,,0,1"
-		"OnTaskComplete" "effect_shields_light,style,5,0,-1"
-		"OnTaskComplete" "effect_shields_light,style,0,2,-1"
-		"OnTaskComplete" "effect_shields_light_model,Skin,0,1,-1"
-		"OnTaskComplete" "effect_shields_light_model,Skin,1,0,-1"
+		"OnUser1" "effect_shields_light,TurnOn,,0,1"
+		"OnUser1" "effect_shields_light,brightness,5,0,-1"
+		"OnUser1" "effect_shields_light,brightness,6,1,-1"
+		"OnUser1" "effect_shields_light_model,Skin,0,1,1"
+		"OnUser1" "effect_shields_light_model,Skin,1,0,1"
+		"OnTaskComplete" "!self,FireUser1,,0,-1"
 	}
 	solid
 	{
@@ -114762,6 +114763,7 @@ entity
 	"brightness" "6"
 	"distance" "120"
 	"pitch" "180"
+	"spawnflags" "0"
 	"spotlight_radius" "80"
 	"style" "0"
 	"targetname" "effect_shields_light"
@@ -116637,8 +116639,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-1593.27 626.94 46.9969]"
-		"look" "[-1593.68 627.84 47.1303]"
+		"position" "[-919.407 385.719 58.6226]"
+		"look" "[-918.535 385.257 58.7908]"
 	}
 }
 cordon
