@@ -35,14 +35,17 @@ if SERVER then
 			end
 		end
 
-		if (GAMEMODE:GetCommunicationsDisabled() or dontSend) and not forceSend then
-			net.Start('au_skeld admin map update')
-				net.WriteTable({})
-			net.Send(playersToSendTo)
-			return
-		end
 
-		local roomPlayerCounts = getRoomPlayerCounts()
+		local roomPlayerCounts = {}
+		if (GAMEMODE:GetCommunicationsDisabled() or dontSend) and not forceSend then
+			-- don't send updates if comms are disabled
+			roomPlayerCounts = {}
+			for name, _ in pairs(roomTriggers) do
+				roomPlayerCounts[name] = 0
+			end
+		else
+			roomPlayerCounts = getRoomPlayerCounts()
+		end
 
 		if #playersToSendTo == 0 then return end -- Send nothing if we can
 
@@ -185,7 +188,7 @@ else
 		if sabotage:GetHandler() ~= 'comms' then return end
 		if not IsValid(map) then return end
 
-		map:SetColor(SABOTAGED_MAP_COLOR)
+		map:SetColor(MAP_COLOR)
 	end)
 
 	hook.Add('GMAU OpenVGUI', 'au_skeld admin map open', function (payload)
