@@ -4,6 +4,7 @@
 *.prt
 *.vmx
 *.blend[1-9]
+*.bsp.backup
 
 Thumbs.db
 ehthumbs.db

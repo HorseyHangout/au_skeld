@@ -19,6 +19,7 @@
 		"*.fgd",
 		"LICENSE",
 		"README.md",
-		"addon.txt"
+		"addon.txt",
+		"*.bsp.backup"
     ]
 }
