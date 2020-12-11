@@ -95,19 +95,19 @@ if SERVER then
 	hook.Add('PostCleanupMap', 'au_skeld VGUI_NAME button highlight', fixupUseHighlight)
 else
 	local noop = function() end
-	local cameraOrder = {
+	local CAMERA_ORDER = {
 		'navigation',   'admin',
 		'upper_engine', 'security',
 	}
-	local noiseMat = Material('au_skeld/gui/noise.png')
-	local buttonMat = Material('au_skeld/gui/security_button.png', 'smooth')
-	local bgMat = Material('au_skeld/gui/cameras_background.png', 'smooth')
-	local monitorMat = Material('au_skeld/gui/cameras_monitor.png', 'smooth')
-	local gradientMat = Material('au_skeld/gui/gradient.png', 'smooth')
-	local noiseColor = Color(189, 247, 224)
-	local colorRed = Color(255, 0, 0)
-	local noiseScrollSpeed = 100
-	local flashSpeed = 150
+	local NOISE_MAT = Material('au_skeld/gui/noise.png')
+	local BUTTON_MAT = Material('au_skeld/gui/security_button.png', 'smooth')
+	local BACKGROUND_MAT = Material('au_skeld/gui/cameras_background.png', 'smooth')
+	local MONITOR_MAT = Material('au_skeld/gui/cameras_monitor.png', 'smooth')
+	local GRADIENT_MAT = Material('au_skeld/gui/gradient.png', 'smooth')
+	local NOISE_COLOR = Color(189, 247, 224)
+	local COLOR_RED = Color(255, 0, 0)
+	local NOISE_SCROLL_SPEED = 100
+	local TEXT_FLASH_SPEED = 150
 
 	local inRenderView = false
 
@@ -115,7 +115,7 @@ else
 		if inRenderView then return false end
 	end)
 
-	surface.CreateFont('au_skeld comms', {
+	surface.CreateFont('au_skeld CamsSabotaged', {
 		font = 'Lucida Console',
 		size = ScreenScale(15),
 		weight = 400,
@@ -127,7 +127,7 @@ else
 	end
 
 	hook.Add('GMAU UseButtonOverride', 'au_skeld cameras use button', function (ent)
-		if ent:GetNWBool('au_skeld_IsCameraButton') then return buttonMat end
+		if ent:GetNWBool('au_skeld_IsCameraButton') then return BUTTON_MAT end
 	end)
 
 	hook.Add('GMAU OpenVGUI', 'au_skeld cameras GUI open', function(payload)
@@ -135,7 +135,7 @@ else
 
 		local base = vgui.Create('AmongUsVGUIBase')
 
-		local bgWidth, bgHeight = GAMEMODE.Render.FitMaterial(bgMat, ScrW(), ScrH())
+		local bgWidth, bgHeight = GAMEMODE.Render.FitMaterial(BACKGROUND_MAT, ScrW(), ScrH())
 		local bgAspectRatio = bgWidth/bgHeight
 		local bgDrawWidth = bgAspectRatio * ScrH()
 
@@ -146,12 +146,12 @@ else
 			if not animationTable.closing and value < 0.5 then return end
 			if animationTable.closing and value > 0.5 then return end
 
-			surface.SetMaterial(bgMat)
+			surface.SetMaterial(BACKGROUND_MAT)
 			surface.SetDrawColor(255, 255, 255)
 			surface.DrawTexturedRect(w/2-bgDrawWidth/2, 0, bgDrawWidth, h)
 			if not animationTable.closing and value > 0.5 then
 				surface.SetDrawColor(255, 255, 255, 255)
-				surface.SetMaterial(gradientMat)
+				surface.SetMaterial(GRADIENT_MAT)
 				surface.DrawTexturedRect(0, 0, w * 0.5, h)
 				surface.DrawTexturedRectUV(w * 0.5, 0, w * 0.5, h, 1, 0, 0, 1)
 			end
@@ -176,15 +176,15 @@ else
 
 		local panel = vgui.Create('Panel')
 		local minDim = 0.98 * math.min(ScrW(), ScrH())
-		local width, height = GAMEMODE.Render.FitMaterial(monitorMat, minDim, minDim)
+		local width, height = GAMEMODE.Render.FitMaterial(MONITOR_MAT, minDim, minDim)
 		local margin = math.min(width, height) * 0.02
 		panel:SetSize(width, height)
 		function panel:Paint(w, h)
-			surface.SetDrawColor(noiseColor)
+			surface.SetDrawColor(NOISE_COLOR)
 			surface.DrawRect(margin/2, margin/2, w-margin, h-margin)
 		end
 		function panel:PaintOver(w, h)
-			surface.SetMaterial(monitorMat)
+			surface.SetMaterial(MONITOR_MAT)
 			surface.SetDrawColor(255, 255, 255)
 			surface.DrawTexturedRect(0, 0, w, h)
 		end
@@ -195,7 +195,8 @@ else
 			row:Dock(TOP)
 
 			for j = 1, 2 do
-				local curCameraName = cameraOrder[(i * 2) + j]
+				local curCameraName = CAMERA_ORDER
+		[(i * 2) + j]
 				local curCamera = payload.cameraData[curCameraName]
 
 				local camContainer = row:Add('Panel')
@@ -234,11 +235,11 @@ else
 							inRenderView = false
 						else
 							-- comms disabled, show noise and flashing text
-							surface.SetMaterial(noiseMat)
-							local time = SysTime() * noiseScrollSpeed
+							surface.SetMaterial(NOISE_MAT)
+							local time = SysTime() * NOISE_SCROLL_SPEED
 							render.PushFilterMin(TEXFILTER.LINEAR)
 							render.PushFilterMag(TEXFILTER.LINEAR)
-							surface.SetDrawColor(noiseColor)
+							surface.SetDrawColor(NOISE_COLOR)
 							surface.DrawTexturedRectUV(
 								0, 0, w, h,
 								time % 1,         0,
@@ -247,8 +248,8 @@ else
 							render.PopFilterMag()
 							render.PopFilterMin()
 
-							if time % flashSpeed < flashSpeed/2 then
-								draw.SimpleText('[' .. string.upper(_('tasks.commsSabotaged')) .. ']', 'au_skeld comms', w/2, h/2, colorRed, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+							if time % TEXT_FLASH_SPEED < TEXT_FLASH_SPEED/2 then
+								draw.SimpleText('[' .. string.upper(_('tasks.commsSabotaged')) .. ']', 'au_skeld CamsSabotaged', w/2, h/2, COLOR_RED, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 							end
 						end
 
@@ -257,7 +258,7 @@ else
 				else
 					print('[?!?] Camera ' .. curCameraName .. ' missing from payload?')
 					function cam:Paint(w, h)
-						surface.SetDrawColor(colorRed)
+						surface.SetDrawColor(COLOR_RED)
 						surface.DrawRect(0, 0, w, h)
 					end
 				end
