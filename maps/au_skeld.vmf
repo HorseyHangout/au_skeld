@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8506"
-	"mapversion" "2828"
+	"mapversion" "2833"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2828"
+	"mapversion" "2833"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -92416,7 +92416,7 @@ hidden
 				editor
 				{
 					"color" "185 150 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -92898,7 +92898,7 @@ hidden
 				editor
 				{
 					"color" "126 147 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -93380,7 +93380,7 @@ hidden
 				editor
 				{
 					"color" "246 207 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -93869,7 +93869,7 @@ hidden
 				editor
 				{
 					"color" "161 226 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -94351,7 +94351,7 @@ hidden
 				editor
 				{
 					"color" "186 247 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -94833,7 +94833,7 @@ hidden
 				editor
 				{
 					"color" "161 118 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -95322,7 +95322,7 @@ hidden
 				editor
 				{
 					"color" "116 113 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -95811,7 +95811,7 @@ hidden
 				editor
 				{
 					"color" "245 238 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -96293,7 +96293,7 @@ hidden
 				editor
 				{
 					"color" "218 111 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -96782,7 +96782,7 @@ hidden
 				editor
 				{
 					"color" "255 144 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -97271,7 +97271,7 @@ hidden
 				editor
 				{
 					"color" "208 185 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -97753,7 +97753,7 @@ hidden
 				editor
 				{
 					"color" "221 174 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -98242,7 +98242,7 @@ hidden
 				editor
 				{
 					"color" "190 171 0"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -114321,13 +114321,40 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "256502"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/au_skeld/weapons_rail.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-816 1590 -8"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-1705.17 290.415 1036.04]"
-		"look" "[-1705.31 291.148 1035.37]"
+		"position" "[-1216.11 415.652 1745.06]"
+		"look" "[-1216.13 415.882 1744.08]"
 	}
 }
 cordon
