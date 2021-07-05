@@ -7,3 +7,10 @@ $scale 1
 $opaque
 
 $sequence idle "weapons_rail"
+
+$collisionmodel "weapons_rail_phys.smd"
+{
+	$concave
+	$maxconvexpieces 72
+	$mass 100
+}
