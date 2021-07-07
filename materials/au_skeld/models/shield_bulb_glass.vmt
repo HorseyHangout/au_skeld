@@ -1,5 +1,6 @@
-"VertexLitGeneric"
+"UnlitGeneric"
 {
+	"$model" "1"
 	"$basetexture" "au_skeld/models/shield_bulb_glass"
 	"$translucent" "1"
 	"$envmap" "env_cubemap"
