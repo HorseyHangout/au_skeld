@@ -7,3 +7,9 @@ $scale 1
 $mostlyopaque
 
 $sequence idle "divert_power"
+
+$collisionmodel "divert_power_phys.smd"
+{
+	$mass 1.3
+	$concave
+}
