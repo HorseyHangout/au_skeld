@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "au_skeld/models/divert_power"
+	"$bumpmap" "au_skeld/models/divert_power_normal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.03 0.03 0.03]"
+}
