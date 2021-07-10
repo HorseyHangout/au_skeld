@@ -1,6 +1,6 @@
 "LightmappedGeneric"
 {
-	"$basetexture" "au_skeld/medbay_floor_lines"
+	"$basetexture" "au_skeld/shield_floor_lines"
 	"$translucent" "1"
 	"$decal" "1"
 	"$decalscale" "0.25"
